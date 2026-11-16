@@ -331,8 +331,8 @@ class HECookingScene(BaseGameView):
             s.position=(l['x']+l['width']/2,WORLD_H-l['y']-l['height']/2-dy)
             s.width=l['width'];s.height=l['height'];arcade.draw_sprite(s)
             if l['id']=='central_research_table' and self.meal.bowl_placed:
-                self.sprite('bowl_complete',(1030,285-dy,74,52),world=True)
-                self.draw_steam(1030,307-dy,True)
+                self.sprite('bowl_complete',(1030,220-dy,74,52),world=True)
+                self.draw_steam(1030,242-dy,True)
             if l['id']=='cooking_station':
                 x,y,w,h=LAB_SWITCH
                 self.sprite('lab_switch',(x,y-dy,w,h),world=True)
