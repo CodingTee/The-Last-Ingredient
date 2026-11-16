@@ -67,6 +67,7 @@ class Scene8View(BaseGameView):
 
         # Exploration Player: Modern Chef (Starts right beside the dining table)
         self.player = Player(x=1265.0, y=140.0, char_id="modern")
+        self.player.footstep_sound = "scene_8_wood_step"
         if meal_finished:self.player.place(1490,300)
         self.player.speed = 220.0
         self.dust_particles = []
@@ -585,6 +586,8 @@ class Scene8View(BaseGameView):
             self.key_down = False
         elif key in (arcade.key.LSHIFT, arcade.key.RSHIFT):
             self.key_shift = False
+        if not (self.key_up or self.key_down or self.key_left or self.key_right):
+            self.player.stop_footstep()
 
     def _handle_exploration_interact(self):
         """Handle player interaction with objects and landmarks in exploration mode."""

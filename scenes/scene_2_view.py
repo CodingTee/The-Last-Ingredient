@@ -151,6 +151,8 @@ class Scene2View(BaseGameView):
 
         # Close-up inspection overlay state
         self.inspect_modal_open = False
+        self.inspect_timer = 0.0
+        self.attach_timer = 0.0
         self.pulse_timer = 0.0
 
         # Dialogue System
@@ -240,6 +242,10 @@ class Scene2View(BaseGameView):
             return
         self.t += dt
         self.pulse_timer += dt
+        if self.inspect_modal_open:
+            self.inspect_timer += dt
+        if self.phase == PHASE_S02_ATTACH_LABEL and not self.is_box_sealed:
+            self.attach_timer += dt
         self.dialogue.update(dt)
 
         # Update bursting particles
@@ -538,16 +544,20 @@ class Scene2View(BaseGameView):
             self.toggle_fullscreen()
             return
 
-        # Close inspection modal
+        # Close inspection modal (unskippable for first 1.0s)
         if self.inspect_modal_open:
+            if getattr(self, "inspect_timer", 0.0) < 1.0:
+                return
             if key in (arcade.key.SPACE, arcade.key.ENTER, arcade.key.ESCAPE, arcade.key.E):
                 self.inspect_modal_open = False
                 self.audio.play("click", volume_scale=0.4)
                 self._trigger_phone_call_event()
             return
 
-        # In sealing phase: SPACE / ENTER / E affixes caution seal!
+        # In sealing phase: SPACE / ENTER / E affixes caution seal! (unskippable for first 1.0s)
         if self.phase == PHASE_S02_ATTACH_LABEL and not self.is_box_sealed:
+            if getattr(self, "attach_timer", 0.0) < 1.0:
+                return
             if key in (arcade.key.SPACE, arcade.key.ENTER, arcade.key.E):
                 self._apply_seal_to_box()
             return

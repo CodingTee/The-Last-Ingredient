@@ -265,6 +265,11 @@ class Scene4View(BaseGameView):
         if self.is_paused:
             return
         self.t += dt
+        if not hasattr(self, "_prev_phase") or self._prev_phase != self.phase:
+            self._prev_phase = self.phase
+            self.interactive_phase_timer = 0.0
+        else:
+            self.interactive_phase_timer = getattr(self, "interactive_phase_timer", 0.0) + dt
 
         # Smooth camera zoom interpolation
         if abs(self.camera_zoom - self.target_zoom) > 0.001:
@@ -913,6 +918,8 @@ class Scene4View(BaseGameView):
             return
 
         if self.phase == PHASE_MICROSCOPE_FOCUS:
+            if getattr(self, "interactive_phase_timer", 0.0) < 1.0:
+                return
             if key in (arcade.key.LEFT, arcade.key.A):
                 self.microscope_focus = max(0.0, self.microscope_focus - 0.15)
                 self.audio.play("click", volume_scale=0.4)
@@ -937,6 +944,8 @@ class Scene4View(BaseGameView):
             return
 
         if self.phase == PHASE_SIGN_DOCUMENT:
+            if getattr(self, "interactive_phase_timer", 0.0) < 1.0:
+                return
             if not self.doc_signed and key in (arcade.key.SPACE, arcade.key.ENTER, arcade.key.S, arcade.key.E):
                 corr = self.aspect_ratio_correction
                 self._quick_sign_document(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 - 80, corr)
@@ -951,6 +960,8 @@ class Scene4View(BaseGameView):
                 return
 
         if self.phase == PHASE_COMPLETED and not self.transitioning:
+            if getattr(self, "interactive_phase_timer", 0.0) < 1.0:
+                return
             if key in (arcade.key.SPACE, arcade.key.ENTER, arcade.key.E):
                 self.transitioning = True
                 self.audio.play("click", volume_scale=0.5)

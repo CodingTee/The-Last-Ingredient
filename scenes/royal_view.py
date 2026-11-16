@@ -140,6 +140,7 @@ class RoyalKitchenView(BaseGameView):
         self.kitchen_mode = "explore"
         self.walker = KitchenWalker()
         self.player = Player(1110, 250, char_id="chef", scale=0.28)
+        self.player.footstep_sound = "Walk with leather shoes"
         self.walk_keys = set()
         self.stir_angle = None
         self.stir_travel = 0.0
@@ -172,6 +173,12 @@ class RoyalKitchenView(BaseGameView):
         self._loaded = False
         self._started = False
         self.workstation = None
+        self.batch_tray = None
+        self.range_hardware = None
+        self.departure = None
+        self.seasoning = None
+        self.serving = None
+        self.end_page_timer = 0.0
 
     def on_show_view(self):
         super().on_show_view()
@@ -195,10 +202,10 @@ class RoyalKitchenView(BaseGameView):
         self.stove_alignment = None  # v21 lids are painted correctly; no v11 pixel warp.
         self.scene_backgrounds = {
             state: {ratio: arcade.load_texture(ROYAL_ASSETS / f"kitchen_v21_{ratio}.png")
-                    for ratio in ("16x10", "16x9", "cooking")}
+                    for ratio in ("16x10", "16x9")}
             for state in ("raw", "prepared", "boil", "simmer", "transfer")
         }
-        self.kitchen = self.scene_backgrounds["raw"]["cooking"]
+        self.kitchen = self.scene_backgrounds["raw"]["16x9"]
         self.dining = arcade.load_texture(ROYAL_ASSETS / "dining_1910.png")
         self.menu_backgrounds = self.scene_backgrounds["raw"]
         room = {ratio: arcade.load_texture(ROYAL_ASSETS / f"kitchen_layered_{ratio}.png")
@@ -391,6 +398,12 @@ class RoyalKitchenView(BaseGameView):
             except Exception:
                 pass
 
+    def play_walk_step(self, before, after, frame_interval):
+        previous_frame = int(before / frame_interval)
+        current_frame = int(after / frame_interval)
+        if current_frame > previous_frame and current_frame % 2:
+            self.audio.play_footstep("Walk with leather shoes")
+
     def ping(self, name="click"):
         if name == 'chop' and self.chop_sounds:
             arcade.play_sound(random.choice(self.chop_sounds), volume=.60)
@@ -484,6 +497,7 @@ class RoyalKitchenView(BaseGameView):
         self.kitchen_mode = "explore"
         self.walker = KitchenWalker()
         self.player = Player(1110, 250, char_id="chef", scale=0.28)
+        self.player.footstep_sound = "Walk with leather shoes"
         self.walk_keys.clear()
         self.story([
             ("Girl", "The kitchen is still awake, isn't it?"),
@@ -1345,10 +1359,10 @@ class RoyalKitchenView(BaseGameView):
             text("The truth of what contaminated the salt jar awaits in the Future Neural Lab.",
                  370, 466, 16, (180, 215, 240))
 
-            # Action Buttons: Continue to Future vs Replay vs Menu
-            self.button("[ SPACE / ENTER ] Proceed to Future Lab (S21)", 371, 357, 440, 50, "proceed_future")
-            self.button("Replay Royal Memory", 371, 287, 210, 46, "start")
-            self.button("Return to Menu", 601, 287, 210, 46, "menu")
+            # Proceed action prompt (unskippable for first 1.0s, no menu choice)
+            can_skip = getattr(self, "end_page_timer", 0.0) >= 1.0
+            lbl = "▶  [ SPACE / ENTER ] Proceed to Future Lab (S21)" if can_skip else "✦ Royal Chapter Concluded ✦"
+            self.button(lbl, 371, 357, 480, 50, "proceed_future" if can_skip else None)
 
         self.immersion.overlay()
         self.draw_pause_overlay()
@@ -1361,6 +1375,8 @@ class RoyalKitchenView(BaseGameView):
             return
         dt = min(dt * self.speed, 0.05)
         self.clock += dt
+        if self.page == "end":
+            self.end_page_timer = getattr(self, "end_page_timer", 0.0) + dt
         if self.page == "dialogue":
             self.dialogue.update(dt)
             self.line = self.dialogue.current_idx
@@ -1382,12 +1398,12 @@ class RoyalKitchenView(BaseGameView):
             before=self.drain_motion;self.drain_motion+=dt
             if before<.55<=self.drain_motion:self.cook.drain()
             if self.drain_motion>=.9:self.drain_motion=None
-        self.batch_tray.update(dt)
-        self.range_hardware.update(dt)
-        self.departure.update(dt)
-        self.seasoning.update(dt)
-        self.serving.update(dt)
-        if self.workstation:self.workstation.update(dt)
+        if self.batch_tray: self.batch_tray.update(dt)
+        if self.range_hardware: self.range_hardware.update(dt)
+        if self.departure: self.departure.update(dt)
+        if self.seasoning: self.seasoning.update(dt)
+        if self.serving: self.serving.update(dt)
+        if self.workstation: self.workstation.update(dt)
         if self.inspect_motion is not None:
             self.inspect_motion+=dt
             if self.inspect_motion>=2.8:self.inspect_motion=None
@@ -1523,8 +1539,9 @@ class RoyalKitchenView(BaseGameView):
         if key == "start":
             self.start()
         elif key == "proceed_future":
-            from scenes.future_integrated_view import FutureLabView
-            self.window.show_view(FutureLabView())
+            if getattr(self, "end_page_timer", 0.0) >= 1.0:
+                from scenes.future_integrated_view import FutureLabView
+                self.window.show_view(FutureLabView())
         elif key == "toggle_door":
             if self.kitchen_mode == "explore":
                 self.walker.toggle_door()
@@ -1819,3 +1836,7 @@ class RoyalKitchenView(BaseGameView):
 
     def on_key_release(self, key, modifiers):
         self.walk_keys.discard(key)
+        if not self.walk_keys:
+            if hasattr(self, 'player') and self.player:
+                self.player.stop_footstep()
+            self.audio.stop_footstep()

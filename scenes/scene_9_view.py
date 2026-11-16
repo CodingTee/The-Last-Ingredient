@@ -76,9 +76,15 @@ HANDS_IMAGE = ROOT_DIR / "assets" / "Scene 9" / "First Scene.png"
 DINO_IMAGE = ROOT_DIR / "assets" / "Scene 9" / "Juvenile Dino.png"
 # The 1536x1024 art carries empty canvas below the body (rows 825..1024).
 DINO_EMPTY_BOTTOM_FRAC = (1024 - 825) / 1024.0
-# Carry fade is driven by remaining distance, so the group still walks at black.
-CARRY_FADE_START_DIST = 560.0
-CARRY_FADE_END_DIST = 120.0
+# Shadow vertical offset as a fraction of its own height. Negative = below the
+# body's bottom edge; closer to 0 pulls the ellipse up under the feet.
+DINO_SHADOW_OFFSET_FRAC = 0.10
+# Carry is clock-driven so collision can never stall the hand-off: darkening
+# runs on phase_timer and the S11 switch fires at a fixed time, even if the
+# group is pinned against a standing stone.
+CARRY_FADE_START_T = 1.2       # seconds into CARRY when darkening begins
+CARRY_FADE_END_T = 3.2         # seconds into CARRY when fully black
+CARRY_TRANSITION_T = 3.6       # seconds into CARRY when S11 is shown
 
 
 class Scene9View(PrehistoricExploreView):
@@ -376,15 +382,24 @@ class Scene9View(PrehistoricExploreView):
         for tp in self.tribespeople:
             tp.update(dt, 0, 0, bounds=bounds)
 
-    def _carry_fade(self, dist):
-        """Darken by remaining distance; full black lands before the camp."""
-        span = CARRY_FADE_START_DIST - CARRY_FADE_END_DIST
-        p = (CARRY_FADE_START_DIST - dist) / span
+    def _carry_fade(self):
+        """Darken on the clock; full black lands while the group still walks."""
+        span = CARRY_FADE_END_T - CARRY_FADE_START_T
+        p = (self.phase_timer - CARRY_FADE_START_T) / span
         self.fade_alpha = 255.0 * max(0.0, min(1.0, p))
 
     def _carry(self, dt):
         """Walk to the baby dinosaur, then haul it (and the tribe) to camp."""
         bounds = (160, WORLD_WIDTH - 160, 200, WORLD_HEIGHT - 200)
+        # Clock-driven fade + hand-off sit at the TOP so no sub-step can stall
+        # them. Even if collision pins the leader while walking back to the
+        # dino, the scene still switches at T and the fade still completes.
+        self._carry_fade()
+        if self.phase_timer >= CARRY_TRANSITION_T:
+            self.fade_alpha = 255
+            from scenes.scene_11_view import Scene11View
+            self.window.show_view(Scene11View())
+            return
         # Brief rope-handoff pause once attached.
         if self._carry_attached and self.phase_timer < 0.9:
             self._idle_cast(dt)
@@ -397,6 +412,8 @@ class Scene9View(PrehistoricExploreView):
             if dist > 50:
                 ux, uy = dx / dist, dy / dist
                 self.player.update(dt, ux, uy, dust_particles=self.dust, bounds=bounds)
+                # Scripted walk obeys the same prop/stone collision as free roam.
+                self._resolve_collisions()
                 for tp in self.tribespeople:
                     tp.update(dt, ux, uy, bounds=bounds)
                 return
@@ -405,15 +422,13 @@ class Scene9View(PrehistoricExploreView):
         dx = CAMP_X - self.player.x
         dy = CAMP_Y - self.player.y
         dist = math.hypot(dx, dy)
-        self._carry_fade(dist)
-        if self.fade_alpha >= 255 or self.phase_timer >= 16.0:
-            self.fade_alpha = 255
-            from scenes.scene_11_view import Scene11View
-            self.window.show_view(Scene11View())
-            return
         ux, uy = dx / dist, dy / dist
         speed = 170.0
         self.player.update(dt, ux, uy, dust_particles=self.dust, bounds=bounds)
+        # Same collision as free roam: the group can no longer walk through
+        # standing stones / props. Transition no longer depends on reaching
+        # camp, so a blocked leader can never deadlock the script.
+        self._resolve_collisions()
         for tp in self.tribespeople:
             tp.update(dt, ux, uy, bounds=bounds)
         self.dino_x += ux * speed * dt
@@ -468,6 +483,10 @@ class Scene9View(PrehistoricExploreView):
                    arcade.key.UP, arcade.key.DOWN, arcade.key.LEFT, arcade.key.RIGHT,
                    arcade.key.LSHIFT, arcade.key.RSHIFT):
             self.held_keys.discard(key)
+        move_keys = {arcade.key.W, arcade.key.A, arcade.key.S, arcade.key.D,
+                     arcade.key.UP, arcade.key.DOWN, arcade.key.LEFT, arcade.key.RIGHT}
+        if not (self.held_keys & move_keys):
+            self.player.stop_footstep()
 
     # ===================================================================
     # DRAW
@@ -538,9 +557,6 @@ class Scene9View(PrehistoricExploreView):
 
         if self.mono_alpha > 0:
             self._draw_monologue()
-
-        if self.phase == PHASE_CARRY:
-            self._draw_rope()
 
         if self.phase == PHASE_FREE:
             self._draw_free_hint()
@@ -667,7 +683,7 @@ class Scene9View(PrehistoricExploreView):
         w, h, cx, cy = self._dino_geom(tex)
         # Contact shadow from sprite geometry; lift puts the body bottom at y - 6.
         sh = h * 0.17
-        arcade.draw_ellipse_filled(cx, self.dino_y - 6 - sh * 0.10,
+        arcade.draw_ellipse_filled(cx, self.dino_y - 6 + sh * DINO_SHADOW_OFFSET_FRAC,
                                    w * 0.86, sh, (18, 32, 18, 110))
         arcade.draw_texture_rect(tex, arcade.XYWH(cx, cy, w, h))
 

@@ -134,6 +134,10 @@ class SceneB05View(BaseGameView):
             self.walking=math.dist(before,(self.walker.x,self.walker.y))>.01
             if self.walking:
                 self.facing=('right' if dx>0 else 'left') if abs(dx)>=abs(dy) else ('up' if dy>0 else 'down')
+                self.step_clock = getattr(self, "step_clock", 0.0) + dt
+                if self.step_clock >= 0.24:
+                    self.step_clock = 0.0
+                    self.audio.play("Normal Walk", min_interval=0.18, volume_scale=0.5)
             if self.walker.near('range') and self.walker.y >= 265:
                 self._begin_film()
 

@@ -9,8 +9,8 @@ ASSETS = Path(__file__).resolve().parents[1] / "assets"
 ART_DIR = ASSETS / "s19"
 SHOTS = (
     ("dining_room", "Get the physician! Help her first!", "The cook",
-     ((0.04, "door_creak", 0.48), (0.18, "footstep", 0.7),
-      (0.34, "footstep", 0.65), (0.49, "table_slam", 0.52)), 0.49, 13),
+     ((0.04, "door_creak", 0.48), (0.18, "royal_leather_step", 0.7),
+      (0.34, "royal_leather_step", 0.65), (0.49, "table_slam", 0.52)), 0.49, 13),
     ("chapel", "They buried her with her mother's ring.", "Narration",
      ((0.18, "clock_chime", 0.34),), 0.18, 2),
     ("record", "", "",

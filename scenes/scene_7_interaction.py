@@ -428,14 +428,7 @@ class CookingInteraction:
 
         v=self.v;v.eggshell_removed=True;v.cook_step=5;v.audio.play('clue_match')
         self.animate('shell_pair', (1170, 196), self.dispose_shell, origin=(814, 355))
-
-        v.dialogue.start_dialogue([
-
-            ('Family Member','"Eat first, then face tomorrow. A full stomach gives you courage."',(245,220,160)),
-
-            ('Chef','"...Eat first, then face tomorrow."',(235,210,175),v.portrait_thinking),
-
-        ]);self.say(self.hint())
+        self.say(self.hint())
 
 
 

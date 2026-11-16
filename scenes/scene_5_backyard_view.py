@@ -105,7 +105,7 @@ class BackyardView(BaseGameView):
         self.fade_in_alpha = 255.0
         self.world_cam = arcade.camera.Camera2D(window=self.window)
         self._fit_camera()
-        self.audio.play('rain_loop', volume_scale=.4)
+        self.audio.play('rain_loop', volume_scale=.4, loop=True)
 
     def _fit_camera(self):
         if not self.world_cam or not self.window: return
@@ -122,6 +122,7 @@ class BackyardView(BaseGameView):
 
     def on_hide_view(self):
         self.keys.clear()
+        self.audio.stop_sound('rain_loop')
 
     def _near_door(self):
         x, y = self._feet()

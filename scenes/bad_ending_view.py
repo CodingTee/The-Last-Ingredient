@@ -850,7 +850,7 @@ class BadEndingView(BaseGameView):
     def _advance_b05(self):
         if self.b05_phase == 0:
             self.b05_phase = 1
-            self.audio.play("footstep", volume_scale=0.9)
+            self.audio.play("Normal Walk", volume_scale=0.9)
         elif self.b05_phase == 1:
             self.b05_phase = 2
             self.audio.play("table_slam", volume_scale=1.0)

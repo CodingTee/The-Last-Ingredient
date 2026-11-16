@@ -192,12 +192,9 @@ class ModernKitchenView(BaseGameView):
             for _ in range(18)
         ]
 
-        # Notebook screen button interaction
-        self.hovered_nb_btn = None
-        self.notebook_buttons = [
-            ("next_scene", "▶  PROCEED TO S02 · UNVERIFIED SAMPLE", SCREEN_WIDTH / 2 - 190, 60, 340, 44),
-            ("menu", "⌂  MAIN MENU", SCREEN_WIDTH / 2 + 190, 60, 320, 44),
-        ]
+        # Interaction and transition timers
+        self.steak_cut_active_timer = 0.0
+        self.notebook_anim_timer = 0.0
 
         # Cinematic Dialogue Engine
         self.dialogue = DialogueBox()
@@ -282,6 +279,7 @@ class ModernKitchenView(BaseGameView):
     def _start_steak_cut_mode(self):
         """Transition into first-person close-up interactive steak slicing."""
         self.phase = PHASE_S01_STEAK_CUT
+        self.steak_cut_active_timer = 0.0
         self.steak_cut_progress = 0.0
         self.steak_cut_auto = False
         self.steak_cut_completed = False
@@ -325,6 +323,8 @@ class ModernKitchenView(BaseGameView):
         self.dialogue.update(dt)
 
         # Steak cut interactive mode updates
+        if self.phase == PHASE_S01_STEAK_CUT:
+            self.steak_cut_active_timer += dt
         if self.phase == PHASE_S01_STEAK_CUT or self.steak_cut_zoom > 0.001:
             if not self.steak_cut_exit_anim:
                 self.steak_cut_zoom = min(1.0, self.steak_cut_zoom + dt * 3.5)
@@ -776,19 +776,22 @@ class ModernKitchenView(BaseGameView):
             Color(10, 8, 14, int(150 * alpha_val))
         )
 
-        # Bottom Action Buttons
-        for btn_id, label, bx, by, bw, bh in self.notebook_buttons:
-            is_hover = (self.hovered_nb_btn == btn_id)
-            if btn_id == "next_scene":
-                bg_col = Color(42, 105, 68, int(235 * alpha_val)) if is_hover else Color(24, 46, 34, int(205 * alpha_val))
-                border_col = Color(110, 245, 160, alpha) if is_hover else Color(75, 125, 95, int(180 * alpha_val))
-            else:
-                bg_col = Color(55, 65, 88, int(235 * alpha_val)) if is_hover else Color(30, 34, 46, int(205 * alpha_val))
-                border_col = Color(140, 195, 255, alpha) if is_hover else Color(85, 105, 135, int(180 * alpha_val))
+        # Single continue prompt (unskippable for first 1.0 second)
+        can_skip = (self.notebook_anim_timer >= 1.0)
+        pulse = (math.sin(self.notebook_anim_timer * 4.0) * 0.2 + 0.8) if can_skip else 0.5
+        prompt_alpha = int(255 * alpha_val * pulse) if can_skip else int(130 * alpha_val)
+        bx = SCREEN_WIDTH / 2
+        by = 60
+        bw = 560
+        bh = 46
 
-            arcade.draw_rect_filled(arcade.XYWH(bx, by, bw, bh), bg_col)
-            arcade.draw_rect_outline(arcade.XYWH(bx, by, bw, bh), border_col, 2.0 if is_hover else 1.2)
-            arcade.draw_text(label, bx, by - 6, Color(255, 255, 255, alpha), 13, anchor_x="center", bold=True)
+        bg_col = Color(24, 46, 34, int(210 * alpha_val * pulse)) if can_skip else Color(20, 24, 28, int(150 * alpha_val))
+        border_col = Color(110, 245, 160, prompt_alpha) if can_skip else Color(80, 95, 105, int(120 * alpha_val))
+
+        arcade.draw_rect_filled(arcade.XYWH(bx, by, bw, bh), bg_col)
+        arcade.draw_rect_outline(arcade.XYWH(bx, by, bw, bh), border_col, 1.8 if can_skip else 1.0)
+        prompt_text = "▶  [ PRESS SPACE OR CLICK TO PROCEED TO S02 ]" if can_skip else "✦ THE LAST INGREDIENT... ✦"
+        arcade.draw_text(prompt_text, bx, by - 6, Color(255, 255, 255, prompt_alpha), 13, anchor_x="center", bold=True)
 
     # ---------------------------------------------------------------- Controls & Interaction
     def on_key_press(self, key, modifiers):
@@ -800,14 +803,19 @@ class ModernKitchenView(BaseGameView):
             return
 
         if self.phase == PHASE_S01_STEAK_CUT:
+            if self.steak_cut_active_timer < 1.0:
+                return
             if key in (arcade.key.SPACE, arcade.key.ENTER, arcade.key.E):
                 if self.steak_cut_completed:
                     self._finish_steak_cut_mode()
                 else:
-                    self.steak_cut_auto = True
+                    self.steak_cut_completed = True
+                    self._finish_steak_cut_mode()
             return
 
         if self.phase == PHASE_S01_NOTEBOOK:
+            if self.notebook_anim_timer < 1.0:
+                return
             if key in (arcade.key.SPACE, arcade.key.ENTER, arcade.key.E):
                 self._proceed_to_next_scene()
             return
@@ -835,13 +843,6 @@ class ModernKitchenView(BaseGameView):
             self.knife_hover_y = vy
             return
 
-        if self.phase == PHASE_S01_NOTEBOOK:
-            self.hovered_nb_btn = None
-            for btn_id, _, bx, by, bw, bh in self.notebook_buttons:
-                if abs(vx - bx) <= bw / 2 and abs(vy - by) <= bh / 2:
-                    self.hovered_nb_btn = btn_id
-                    break
-
     def on_mouse_press(self, x, y, button, modifiers):
         if self.handle_pause_mouse_press(x, y, button):
             return
@@ -857,15 +858,10 @@ class ModernKitchenView(BaseGameView):
             return
 
         if self.phase == PHASE_S01_NOTEBOOK:
-            if self.hovered_nb_btn == "next_scene":
-                self.audio.play("click")
-                self._proceed_to_next_scene()
-            elif self.hovered_nb_btn == "menu":
-                self.audio.play("click")
-                from scenes.menu_view import MenuView
-                self.window.show_view(MenuView())
-            else:
-                self._proceed_to_next_scene()
+            if self.notebook_anim_timer < 1.0:
+                return
+            self.audio.play("click")
+            self._proceed_to_next_scene()
             return
 
         if self.dialogue.active:

@@ -69,7 +69,10 @@ class RoyalDeparture:
     def update(self,dt):
         v=self.v
         if v.page!='departure':return
+        previous_time = self.time
         self.time+=dt
+        if self.mode == 'exit':
+            v.play_walk_step(previous_time, min(self.time, self.HALL_EXIT_DURATION), .14)
         if self.mode=='putdown' and self.time>=1.3:
             self.mode='urgent';self.time=0;v.walker.x=310;v.walker.y=330
             v.player.facing='right'

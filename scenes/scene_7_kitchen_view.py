@@ -4064,6 +4064,8 @@ class KitchenView(BaseGameView):
 
 
             self.key_down = False
+        if not (self.key_up or self.key_down or self.key_left or self.key_right):
+            self.player.stop_footstep()
 
 
 

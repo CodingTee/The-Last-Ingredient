@@ -1,0 +1,13 @@
+Generated glass hydroponic plant decorations installed 2026-10-26.
+All 11 plant positions now use generated transparent glass-root jars, navy/gold rim,
+pale blue water, visible roots and cyan base ring. Three generated foliage variants
+(bushy, small and trailing) are reused to keep a consistent style.
+Glass-water pixels have partial alpha; roots, leaves and metal rims remain distinct.
+Sprites prefiltered to 2x world size for clean in-game downsampling.
+Plants are decorative: no interaction prompts, old metal-stand collision/shadows removed.
+Furniture collision and front/back depth remain; central-table/hologram animation retained.
+Old plant-occluded furniture faces restored only in hidden patches; lamp stem restored.
+Built-in imagegen prompts and source images saved in workspace outputs/future_glass_plants.
+Installed Arcade QA passed: 24 render entities, 13 remaining physical ground footprints,
+movement, inspection, pause, floating toggle, 16:9/16:10 and three visual viewpoints.
+Backup: backups/future_before_glass_plants_20261026.

@@ -59,6 +59,7 @@ class Player:
         self.sprite_list.append(self.sprite)
 
         self.audio = AudioManager()
+        self.footstep_sound = "Normal Walk"
 
     def _load_character_textures(self, char_id, sprites_dir=None):
         cdir = (sprites_dir or CHARACTERS_DIR) / char_id
@@ -78,11 +79,14 @@ class Player:
             self._update_texture()
 
     def place(self, x, y):
-        """Teleport and sync the sprite immediately (no walk cycle)."""
+        """Teleport and sync the sprite immediately."""
         self.x = x
         self.y = y
         self.sprite.center_x = x
         self.sprite.center_y = y
+
+    def stop_footstep(self):
+        self.audio.stop_footstep()
 
     def update(self, dt, move_x, move_y, dust_particles=None, bounds=(50, 1230, 80, 520), obstacles=None):
         if move_x != 0 or move_y != 0:
@@ -139,8 +143,11 @@ class Player:
                     if dust_particles is not None:
                         offset_x = -10 if self.anim_frame_idx == 1 else 10
                         dust_particles.append(FootstepDust(self.x + offset_x, self.y - self.feet_offset))
-                    self.audio.play("footstep", min_interval=0.22, volume_scale=0.35)
+                    
+                    self.audio.play_footstep(self.footstep_sound)
         else:
+            if self.is_moving:
+                self.audio.stop_footstep()
             self.is_moving = False
             self.anim_timer = 0.0
             self.anim_frame_idx = 0

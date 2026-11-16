@@ -911,6 +911,10 @@ class PrehistoricExploreView(BaseGameView):
 
     def on_key_release(self, key, modifiers):
         self.held_keys.discard(key)
+        move_keys = {arcade.key.W, arcade.key.A, arcade.key.S, arcade.key.D,
+                     arcade.key.UP, arcade.key.DOWN, arcade.key.LEFT, arcade.key.RIGHT}
+        if not (self.held_keys & move_keys):
+            self.player.stop_footstep()
 
     def on_mouse_motion(self, x, y, dx=0, dy=0):
         self.handle_pause_mouse_motion(x, y)

@@ -232,7 +232,10 @@ class Scene5View(BaseGameView):
 
     def on_show_view(self):
         super().on_show_view()
-        self.audio.play("rain_loop", volume_scale=0.55)
+        self.audio.play("rain_loop", volume_scale=0.55, loop=True)
+
+    def on_hide_view(self):
+        self.audio.stop_sound("rain_loop")
 
     def _trigger_intro_dialogue(self):
         if self.opening_dialogue_done:
@@ -355,7 +358,7 @@ class Scene5View(BaseGameView):
                         self.vault_is_99_fail = False
                         self.vault_jump_t = 0.0
                         self.vault_jump_height = self.vault_power * 175.0
-                        self.audio.play('footstep', volume_scale=0.7)
+                        self.audio.play('Normal Walk', volume_scale=0.7)
 
                 # Stage 2: Final Sprint - Must tap 5 consecutive times without interruption
                 elif self.vault_stage == 2:
@@ -369,7 +372,7 @@ class Scene5View(BaseGameView):
                         # 99% jump height: jumps almost over the gate (top rail), but misses by a hair!
                         self.vault_jump_height = 0.99 * 195.0
                         self.vault_power = 0.99
-                        self.audio.play('footstep', volume_scale=0.85)
+                        self.audio.play('Normal Walk', volume_scale=0.85)
 
             # Phase 1: Insufficient power jump or interrupted 99% near-miss jump
             elif self.vault_phase == 1:
@@ -398,7 +401,7 @@ class Scene5View(BaseGameView):
                     self.vault_power = 0.0         # Threshold bar cleared to 0!
                     self.vault_is_99_fail = False
                     self.vault_last_tap_time = self.t
-                    self.audio.play('footstep', volume_scale=0.75)
+                    self.audio.play('Normal Walk', volume_scale=0.75)
 
             # Phase 2: FULL VAULT SUCCESS (Cleared gate! Soars over, lands behind, and recedes/shrinks into backyard)
             elif self.vault_phase == 2:
@@ -461,32 +464,41 @@ class Scene5View(BaseGameView):
                 self.player.speed = 240.0
                 self.player.step_interval = 0.13
 
+            # Check if player's FEET genuinely step inside any water puddle
+            feet_x = self.player.x
+            feet_y = self.player.y - 83.6  # Exact bottom of shoes
+            in_puddle = False
+            for p in self.puddles:
+                px, py = p["x"], p["y"]
+                pw, ph = p["w"], p["h"]
+                dx = (feet_x - px) / max(1.0, pw * 0.5)
+                dy = (feet_y - py) / max(1.0, ph * 0.5)
+                if dx * dx + dy * dy <= 1.0:
+                    in_puddle = True
+                    break
+
+            if in_puddle:
+                self.player.footstep_sound = "Walk on puddle"
+            else:
+                self.player.footstep_sound = "Normal Walk"
+
+            prev_frame = self.player.anim_frame_idx
             # Pass dust_particles=None to avoid spawning fake dust on rainy wet ground
             self.player.update(
                 dt, move_x, move_y, None,
                 bounds=(130, WORLD_WIDTH - 150, PLAYER_Y_MIN, PLAYER_Y_MAX)
             )
 
-            # Check if player's FEET genuinely step inside a puddle
-            if self.player.is_moving:
-                feet_x = self.player.x
-                feet_y = self.player.y - 83.6  # Exact bottom of shoes
-                for p in self.puddles:
-                    px, py = p["x"], p["y"]
-                    pw, ph = p["w"], p["h"]
-                    # Exact ellipse equation check
-                    dx = (feet_x - px) / max(1.0, pw * 0.5)
-                    dy = (feet_y - py) / max(1.0, ph * 0.5)
-                    if dx * dx + dy * dy <= 1.0:
-                        if random.random() < 0.35:
-                            # Spawn ripple directly at feet location inside the puddle!
-                            self.puddle_ripples.append([feet_x, feet_y, 4.0, random.uniform(18, 30), 190])
-                            # Spawn real water splash droplets scattering outward (water splash FX)
-                            for _ in range(4):
-                                sp_x = feet_x + random.uniform(-16, 16)
-                                sp_y = feet_y + random.uniform(0, 12)
-                                self.rain_splashes.append([sp_x, sp_y, random.uniform(2.5, 4.5), 230])
-                            self.audio.play("puddle_splash", min_interval=0.22, volume_scale=0.85)
+            # Spawn ripples and water splash droplets when feet hit the puddle
+            if in_puddle and self.player.is_moving:
+                if self.player.anim_frame_idx in (1, 3) and self.player.anim_frame_idx != prev_frame:
+                    # Spawn ripple directly at feet location inside the puddle!
+                    self.puddle_ripples.append([feet_x, feet_y, 4.0, random.uniform(20, 32), 200])
+                    # Spawn real water splash droplets scattering outward (water splash FX)
+                    for _ in range(4):
+                        sp_x = feet_x + random.uniform(-16, 16)
+                        sp_y = feet_y + random.uniform(0, 12)
+                        self.rain_splashes.append([sp_x, sp_y, random.uniform(2.5, 4.5), 230])
 
         # 1b. Car Traffic Simulation & Special Effects
         if not self.is_dead:
@@ -659,7 +671,7 @@ class Scene5View(BaseGameView):
         self.player.anim_timer = 0.0
         self.player._update_texture()
         self.vault_last_tap_time = self.t
-        self.audio.play("footstep", volume_scale=0.6)
+        self.audio.play("Normal Walk", volume_scale=0.6)
 
     def _register_vault_tap(self):
         """Called when user presses SPACE or clicks during gate vaulting."""
@@ -671,7 +683,7 @@ class Scene5View(BaseGameView):
         # Stage 1: Build momentum to 100%
         if self.vault_stage == 1:
             self.vault_power = min(1.0, self.vault_power + 0.11)
-            self.audio.play("footstep", min_interval=0.06, volume_scale=0.65)
+            self.audio.play("Normal Walk", min_interval=0.06, volume_scale=0.65)
             # Check if reached 100% threshold
             if self.vault_power >= 1.0:
                 self.vault_power = 1.0
@@ -685,7 +697,7 @@ class Scene5View(BaseGameView):
         # Stage 2: Final Sprint - 5 consecutive taps without pause!
         elif self.vault_stage == 2:
             self.vault_sprint_taps += 1
-            self.audio.play("footstep", min_interval=0.04, volume_scale=0.85)
+            self.audio.play("Normal Walk", min_interval=0.04, volume_scale=0.85)
 
             # 5 consecutive taps completed without interruption -> Jump over the gate!
             if self.vault_sprint_taps >= 5:
@@ -697,6 +709,7 @@ class Scene5View(BaseGameView):
 
     def _load_kitchen_scene(self):
         """Enter the S05 backyard before reaching the old kitchen door."""
+        self.audio.stop_sound("rain_loop")
         from scenes.scene_5_backyard_view import BackyardView
         if not hasattr(self, "_backyard_view"):
             self._backyard_view = BackyardView(street_view=self)
@@ -1290,6 +1303,8 @@ class Scene5View(BaseGameView):
             self.key_right = False
         elif key in (arcade.key.LSHIFT, arcade.key.RSHIFT):
             self.key_shift = False
+        if not (self.key_up or self.key_down or self.key_left or self.key_right):
+            self.player.stop_footstep()
 
     def on_mouse_motion(self, x, y, dx, dy):
         if self.handle_pause_mouse_motion(x, y):

@@ -5,7 +5,7 @@ import arcade
 
 class RoyalServing:
     TABLE_SOUP = (900, 382, 90, 65)
-    CHEF_AT_TABLE = (808, 415)
+    CHEF_AT_TABLE = (808, 292)
     DINING_APPROACH = 2.5
     DINING_PLACE = .45
 
@@ -49,7 +49,12 @@ class RoyalServing:
                 c.served=min(1,c.served+1/3);self.loaded=False;self.selected=c.served<1;self.mode='idle';self.time=0
                 v.say('The bowl is full. Click the bowl to carry it.' if c.served>=1 else 'Scoop another ladleful from the pot.')
         elif v.page=='delivery':
+            previous_time = self.time
             self.time+=dt
+            if self.mode in {'exit', 'corridor'}:
+                v.play_walk_step(previous_time, self.time, .13)
+            elif self.mode == 'place':
+                v.play_walk_step(min(previous_time, self.DINING_APPROACH), min(self.time, self.DINING_APPROACH), .13)
             if self.mode=='walk':
                 k=v.walk_keys
                 dx = int(bool(k & {arcade.key.D, arcade.key.RIGHT})) - int(bool(k & {arcade.key.A, arcade.key.LEFT}))
@@ -62,9 +67,12 @@ class RoyalServing:
                         self.carry_facing = 'right' if moved_x > 0 else 'left'
                     else:
                         self.carry_facing = 'up' if moved_y > 0 else 'down'
+                    previous_step = self.carry_step
                     self.carry_step += dt
+                    v.play_walk_step(previous_step, self.carry_step, .13)
                 else:
                     self.carry_step = 0
+                    v.audio.stop_footstep()
             elif self.mode=='exit' and self.time>=1.4:self.mode='corridor';self.time=0
             elif self.mode=='corridor' and self.time>=2.1:self.mode='place';self.time=0;v.location='dining'
             elif self.mode=='place' and self.time>=self.DINING_APPROACH + self.DINING_PLACE:
@@ -200,7 +208,7 @@ class RoyalServing:
         if self.time < self.DINING_APPROACH:
             progress = self.time / self.DINING_APPROACH
             x = 32 + (chef_x - 32) * progress
-            feet_y = 378 + (chef_feet - 378) * min(1, progress * 4)
+            feet_y = 352 + (chef_feet - 352) * min(1, progress * 3)
             self.draw_carry(x, feet_y, 170 + 30*progress, 'right', self.time)
             image(self.table_front, 720, 450, 1440, 900)
         else:

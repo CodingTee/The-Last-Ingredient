@@ -1,0 +1,142 @@
+[
+  {
+    "id": "00_whole",
+    "prompt": "Use case: precise-object-edit. Asset: single transparent cooking game sprite, no text, no knife, no board, no background or ground shadow. Reference is peeled ivory onion, horizontal axis root LEFT and dried stem RIGHT. Match reference clean softly shaded illustration, slightly elevated side view, warm white flesh and pale gold exterior. Keep bulb diameter consistent, crisp natural concentric cut rings, no dirt. Show ONE animation state only, centered with transparent padding. Whole peeled onion with both small fibrous root on LEFT and dry stem tip on RIGHT still attached. No cuts, no loose pieces.",
+    "source": "generated_images/exec-2ba394e1-cd15-48e6-a8c8-c431f3d559c5.png",
+    "file": "onion_00_whole.png",
+    "canvas": [
+      1000,
+      420
+    ],
+    "source_bbox": [
+      369,
+      91,
+      1251,
+      828
+    ],
+    "content_size": [
+      359,
+      300
+    ]
+  },
+  {
+    "id": "01_top_removed",
+    "prompt": "Use case: precise-object-edit. Asset: single transparent cooking game sprite, no text, no knife, no board, no background or ground shadow. Reference is peeled ivory onion, horizontal axis root LEFT and dried stem RIGHT. Match reference clean softly shaded illustration, slightly elevated side view, warm white flesh and pale gold exterior. Keep bulb diameter consistent, crisp natural concentric cut rings, no dirt. Show ONE animation state only, centered with transparent padding. Same onion: remove ONLY thin dry stem end on RIGHT with a vertical cross cut. Main bulb retains fibrous root on LEFT, right now has small flat fresh circular cut face. Detached thin stem cap sits separately to far RIGHT with visible gap. Exactly main onion plus one small waste cap.",
+    "source": "generated_images/exec-1ba0a0d6-ada7-45fd-893b-a4c85986fb01.png",
+    "file": "onion_01_top_removed.png",
+    "canvas": [
+      1000,
+      420
+    ],
+    "source_bbox": [
+      371,
+      93,
+      1363,
+      834
+    ],
+    "content_size": [
+      402,
+      300
+    ]
+  },
+  {
+    "id": "02_both_trimmed",
+    "prompt": "Use case: precise-object-edit. Asset: single transparent cooking game sprite, no text, no knife, no board, no background or ground shadow. Reference is peeled ivory onion, horizontal axis root LEFT and dried stem RIGHT. Match reference clean softly shaded illustration, slightly elevated side view, warm white flesh and pale gold exterior. Keep bulb diameter consistent, crisp natural concentric cut rings, no dirt. Show ONE animation state only, centered with transparent padding. Same onion: both thin root and stem caps cut off. Main peeled bulb has fresh flat cut faces at both ends. Detached fibrous root cap lies far LEFT, detached dry stem cap far RIGHT, both small waste pieces clearly separated. Exactly main bulb and TWO tiny waste caps.",
+    "source": "generated_images/exec-ae8d4d39-219a-44e4-bc4d-e1a91fb11c49.png",
+    "file": "onion_02_both_trimmed.png",
+    "canvas": [
+      1000,
+      420
+    ],
+    "source_bbox": [
+      157,
+      100,
+      1469,
+      829
+    ],
+    "content_size": [
+      540,
+      300
+    ]
+  },
+  {
+    "id": "03_1-4",
+    "prompt": "Use case: precise-object-edit. Asset: single transparent cooking game sprite, no text, no knife, no board, no background or ground shadow. Reference is peeled ivory onion, horizontal axis root LEFT and dried stem RIGHT. Match reference clean softly shaded illustration, slightly elevated side view, warm white flesh and pale gold exterior. Keep bulb diameter consistent, crisp natural concentric cut rings, no dirt. Show ONE animation state only, centered with transparent padding. Both ends already trimmed; ALL waste removed. Cut edible bulb into FIVE equal axial portions, but only FIRST cut has been made: ONE 1/5-thickness round slice on LEFT and a single connected 4/5 remaining bulb on RIGHT. Exactly TWO edible pieces, proportional axial lengths 1:4, small gap, aligned in original horizontal row. No roots or dry tips.",
+    "source": "generated_images/exec-83bae222-b9f0-408f-a589-2ce9157c2dd7.png",
+    "file": "onion_03_1-4.png",
+    "canvas": [
+      1000,
+      420
+    ],
+    "source_bbox": [
+      428,
+      95,
+      1353,
+      827
+    ],
+    "content_size": [
+      379,
+      300
+    ]
+  },
+  {
+    "id": "04_1-1-3",
+    "prompt": "Use case: precise-object-edit. Asset: single transparent cooking game sprite, no text, no knife, no board, no background or ground shadow. Reference is peeled ivory onion, horizontal axis root LEFT and dried stem RIGHT. Match reference clean softly shaded illustration, slightly elevated side view, warm white flesh and pale gold exterior. Keep bulb diameter consistent, crisp natural concentric cut rings, no dirt. Show ONE animation state only, centered with transparent padding. Both ends trimmed, no waste. TWO 1/5-thickness edible round slices on LEFT and one connected 3/5 remaining bulb RIGHT. Exactly THREE edible pieces, axial lengths 1:1:3, small equal gaps, aligned original horizontal row. No root, no stem.",
+    "source": "generated_images/exec-99ddf642-bc38-4b60-bbce-e16851b2a35f.png",
+    "file": "onion_04_1-1-3.png",
+    "canvas": [
+      1000,
+      420
+    ],
+    "source_bbox": [
+      171,
+      99,
+      1447,
+      837
+    ],
+    "content_size": [
+      519,
+      300
+    ]
+  },
+  {
+    "id": "05_1-1-1-2",
+    "prompt": "Use case: precise-object-edit. Asset: single transparent cooking game sprite, no text, no knife, no board, no background or ground shadow. Reference is peeled ivory onion, horizontal axis root LEFT and dried stem RIGHT. Match reference clean softly shaded illustration, slightly elevated side view, warm white flesh and pale gold exterior. Keep bulb diameter consistent, crisp natural concentric cut rings, no dirt. Show ONE animation state only, centered with transparent padding. Both ends trimmed, no waste. THREE 1/5-thickness edible round slices LEFT and one connected 2/5 remaining bulb RIGHT. Exactly FOUR edible pieces, axial lengths 1:1:1:2, equal small gaps, aligned original horizontal row. No root no stem.",
+    "source": "generated_images/exec-062ef43d-1d52-44b2-937c-9ee3df1800da.png",
+    "file": "onion_05_1-1-1-2.png",
+    "canvas": [
+      1000,
+      420
+    ],
+    "source_bbox": [
+      210,
+      189,
+      1563,
+      702
+    ],
+    "content_size": [
+      791,
+      300
+    ]
+  },
+  {
+    "id": "06_1-1-1-1-1",
+    "prompt": "Use case: precise-object-edit. Asset: single transparent cooking game sprite, no text, no knife, no board, no background or ground shadow. Reference is peeled ivory onion, horizontal axis root LEFT and dried stem RIGHT. Match reference clean softly shaded illustration, slightly elevated side view, warm white flesh and pale gold exterior. Keep bulb diameter consistent, crisp natural concentric cut rings, no dirt. Show ONE animation state only, centered with transparent padding. Both ends trimmed, no waste. Fully sliced onion into exactly FIVE equal-thickness edible round cross-sectional slices in horizontal row, axial lengths 1:1:1:1:1, small equal gaps. Preserve natural varying diameter across bulb: middle slices largest, outer slices smaller. No uncut remainder, no roots no stem. Refined from preceding four-piece frame: split right remainder into two slices; keep all FIVE slices upright on edge with same camera and lighting, not flat coins.",
+    "source": "generated_images/exec-ef8346b4-4a56-4939-b182-d4ff35cdca78.png",
+    "file": "onion_06_1-1-1-1-1.png",
+    "canvas": [
+      1000,
+      420
+    ],
+    "source_bbox": [
+      209,
+      207,
+      1593,
+      687
+    ],
+    "content_size": [
+      865,
+      300
+    ]
+  }
+]

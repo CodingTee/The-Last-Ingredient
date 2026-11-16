@@ -81,6 +81,7 @@ class HomeKitchenView(BaseGameView):
 
         # Exploration Player: Modern Chef (Spacious 2D Movement - Starts in bottom-left corner)
         self.player = Player(x=200, y=215, char_id="modern")
+        self.player.footstep_sound = "Walk on wooden land"
         self.player.speed = 220.0
         self.dust_particles = []
 
@@ -286,6 +287,10 @@ class HomeKitchenView(BaseGameView):
             return
 
         self.t += dt
+        if self.mode == MODE_COOKING_MAMA:
+            self.cook_step_timer = getattr(self, "cook_step_timer", 0.0) + dt
+        elif self.mode == MODE_TAROT_CARDS:
+            self.tarot_timer = getattr(self, "tarot_timer", 0.0) + dt
 
         # Update Dialogue
         if self.dialogue.active:
@@ -850,6 +855,86 @@ class HomeKitchenView(BaseGameView):
             elif key == arcade.key.E:
                 self._handle_exploration_interact()
 
+        elif self.mode == MODE_COOKING_MAMA:
+            if getattr(self, "cook_step_timer", 0.0) < 1.0:
+                return
+            if key in (arcade.key.SPACE, arcade.key.ENTER):
+                if self.cook_step == COOK_STEP_FILL_WATER:
+                    self.is_filling_water = True
+                    self.audio.play("boil")
+                elif self.cook_step == COOK_STEP_IGNITE_STOVE:
+                    self.stove_ignited = True
+                    self.audio.play("click")
+                    self.audio.play("sizzle")
+                    self.dialogue.start_dialogue([
+                        ("Burner Ignited", "The gas ignites with a quiet whoosh! Clear blue flames ring the burner.\nWait for the water to reach a rolling boil.", (120, 210, 255))
+                    ])
+                elif self.cook_step == COOK_STEP_ADD_NOODLES:
+                    self.noodles_added = True
+                    self.cook_step = COOK_STEP_FRY_EGG
+                    self.cook_step_timer = 0.0
+                    self.audio.play("boil")
+                    self.dialogue.start_dialogue([
+                        ("Noodles Added", "Dry noodles slip into the boiling broth, instantly softening in the steam.\nNow crack and fry an egg in the side skillet.", (245, 220, 160))
+                    ])
+                elif self.cook_step == COOK_STEP_FRY_EGG:
+                    self.egg_cracked = True
+                    self.eggshell_present = True
+                    self.cook_step = COOK_STEP_EGGSHELL_MEMORY
+                    self.cook_step_timer = 0.0
+                    self.audio.play("chop")
+                    self.audio.play("sizzle")
+                elif self.cook_step == COOK_STEP_EGGSHELL_MEMORY:
+                    self.eggshell_removed = True
+                    self.cook_step = COOK_STEP_ASSEMBLE_DISH
+                    self.cook_step_timer = 0.0
+                    self.audio.play("clue_match")
+                    script = [
+                        (
+                            "Memory: The Eggshell",
+                            "While cracking the egg, a small sharp fragment of shell falls into the pan.\nHe pauses, staring at it motionless.",
+                            (210, 175, 120),
+                        ),
+                        (
+                            "Chef",
+                            "\"Be careful... small things like that can choke a child.\"",
+                            (220, 190, 140),
+                        ),
+                        (
+                            "Memory: The Eggshell",
+                            "He spoons it out carefully with a teaspoon before looking at the broth.",
+                            (210, 175, 120),
+                        )
+                    ]
+                    self.dialogue.start_dialogue(script)
+                elif self.cook_step in (COOK_STEP_ASSEMBLE_DISH, COOK_STEP_FINISHED):
+                    self.cook_step = COOK_STEP_FINISHED
+                    self.audio.play("achievement")
+                    self.mode = MODE_TAROT_CARDS
+                    self.tarot_timer = 0.0
+                    self.dialogue.start_dialogue([
+                        (
+                            "A Bowl of Noodles",
+                            "He sets down the hot bowl on the quiet wooden table.\nA comforting aroma of simple egg and broth rises through the dim room.",
+                            (220, 205, 180)
+                        ),
+                        (
+                            "Midnight Anomaly",
+                            "As the steam rises, three ancient cards begin to shimmer upon the tabletop...",
+                            COLOR_GOLD
+                        )
+                    ])
+
+        elif self.mode == MODE_TAROT_CARDS:
+            if getattr(self, "tarot_timer", 0.0) < 1.0:
+                return
+            if key in (arcade.key.SPACE, arcade.key.ENTER):
+                self.audio.play("card_flip")
+                self.audio.play("time_warp")
+                self.selected_card = "beast"
+                self.transitioning_to_scene_7 = True
+                self.inspecting_card = None
+
     def on_key_release(self, key, modifiers):
         if key in (arcade.key.A, arcade.key.LEFT):
             self.key_left = False
@@ -861,6 +946,8 @@ class HomeKitchenView(BaseGameView):
             self.key_down = False
         elif key in (arcade.key.LSHIFT, arcade.key.RSHIFT):
             self.key_shift = False
+        if not (self.key_up or self.key_down or self.key_left or self.key_right):
+            self.player.stop_footstep()
 
     def _handle_exploration_interact(self):
         px = self.player.x

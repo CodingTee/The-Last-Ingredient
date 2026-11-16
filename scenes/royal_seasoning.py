@@ -18,7 +18,12 @@ class RoyalSeasoning:
                 left, top, right, bottom = texture.image.getchannel("A").getbbox()
                 frames.append(texture.crop(left, top, right-left, bottom-top))
             self.return_frames[facing] = frames
-        self.tex={n:arcade.load_texture(assets/'seasoning_v1'/(n+'_silver.png')) for n in ('salt_spoon_empty','salt_spoon_loaded')}
+        self.tex = {}
+        for n in ('salt_spoon_empty', 'salt_spoon_loaded'):
+            p = assets / 'seasoning_v1' / (n + '_silver.png')
+            if not p.exists():
+                p = assets / 'seasoning_v1' / (n + '.png')
+            self.tex[n] = arcade.load_texture(p)
         self.reset()
 
     def reset(self):
@@ -96,7 +101,11 @@ class RoyalSeasoning:
             return
         distance = abs(self.return_progress - old)
         self.return_moving = distance > 0
+        previous_stride = self.return_stride
         self.return_stride += distance
+        v.play_walk_step(previous_stride, self.return_stride, self.RETURN_STEP / 2)
+        if not self.return_moving:
+            v.audio.stop_footstep()
         if self.return_progress >= 1:
             self.mode = 'peek'
             self.time = 0

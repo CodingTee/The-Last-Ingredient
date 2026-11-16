@@ -215,8 +215,9 @@ class BaseGameView(arcade.View):
         # remove_handlers() wraps handlers in WeakMethod on every show_view(),
         # and WeakMethod rejects plain functions -> TypeError on scene switch.
         def safe(inst, *a, **k):
-            if inst._crash and name == "on_draw":
-                inst._render_crash_screen()
+            if inst._crash:
+                if name == "on_draw":
+                    inst._render_crash_screen()
                 return
             if name in ("on_mouse_motion", "on_mouse_drag", "on_mouse_press", "on_mouse_release"):
                 if len(a) >= 2:

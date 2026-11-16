@@ -141,6 +141,7 @@ class HECookingScene(BaseGameView):
         self.build_station_layers()
         self.station_swap=None
         self.unify_bowl_sprites()
+        self.build_remaining_broth()
         self.lab_background=arcade.Sprite(arcade.load_texture(ASSETS_DIR/'future_lab/room_background.png'))
         self.layers=[]
         for l in json.loads((ASSETS_DIR/'future_lab/layout.json').read_text())['layers']:
@@ -284,9 +285,14 @@ class HECookingScene(BaseGameView):
             my=int(bool(self.keys&{arcade.key.W,arcade.key.UP}))-int(bool(self.keys&{arcade.key.S,arcade.key.DOWN}))
             self.player.update(dt,mx,my,bounds=(125,1860,72+FEET_OFFSET,441+FEET_OFFSET),obstacles=self.obstacles)
             feet=self.player.y-FEET_OFFSET;edge=max(125,125+(feet-290)*1.2)
-            self.player.place(max(edge,min(WORLD_W-edge,self.player.x)),self.player.y)
+            clamped_x = max(edge,min(WORLD_W-edge,self.player.x))
+            if clamped_x != self.player.x:
+                self.player.x = clamped_x
+                self.player.sprite.center_x = clamped_x
             self.follow(dt,snap=False)
-            spots=[('kitchen',(390,345)),('chair',(1590,191)),('table',(1030,82))]
+            spots=[('kitchen',(390,345)),('chair',(1590,191))]
+            if self.can_place_bowl():
+                spots.append(('table',(1030,82)))
             def distance(spot):
                 if spot[0]!='kitchen':
                     return math.hypot(self.player.x-spot[1][0],feet-spot[1][1])
@@ -324,15 +330,15 @@ class HECookingScene(BaseGameView):
             dy=bob_offset(l,self.elapsed) if self.float_enabled else 0
             s.position=(l['x']+l['width']/2,WORLD_H-l['y']-l['height']/2-dy)
             s.width=l['width'];s.height=l['height'];arcade.draw_sprite(s)
+            if l['id']=='central_research_table' and self.meal.bowl_placed:
+                self.sprite('bowl_complete',(1030,285-dy,74,52),world=True)
+                self.draw_steam(1030,307-dy,True)
             if l['id']=='cooking_station':
                 x,y,w,h=LAB_SWITCH
                 self.sprite('lab_switch',(x,y-dy,w,h),world=True)
         if not inserted:self.draw_player()
         dy=5*math.sin(self.elapsed*math.tau/3.6) if self.float_enabled else 0
         arcade.draw_texture_rect(self.hologram,arcade.XYWH(1121,WORLD_H-148.5-dy,366,183),alpha=225)
-        if self.meal.bowl_placed:
-            self.sprite('bowl_complete',(1030,297,92,65),world=True)
-            self.draw_steam(1030,325,True)
         # Station Visual Cue (Floating tailless yellow arrow)
         if self.nearest:
             station_targets = {'kitchen': (344, 576), 'chair': (1590, 233), 'table': (1030, 260)}
@@ -346,7 +352,6 @@ class HECookingScene(BaseGameView):
         hints={'kitchen':'[E] Cook','chair':'[E] Consciousness Return','table':'[E] Place bowl'}
         if self.nearest:
             hint=hints[self.nearest]
-            if self.meal.bowl_placed and self.nearest=='table':hint='The bowl stays here.'
             self.text(hint,800,47,17,CYAN,True)
 
     def draw_player(self):
@@ -797,17 +802,11 @@ class HECookingScene(BaseGameView):
                                             (8+50*phase)*self.scale, (3+13*phase)*self.scale,
                                             (169,222,244,int(155*(1-phase))), self.scale)
 
-    def draw_remaining_broth(self):
-        # Calibrated in the 700 x 518 pot sprite plane. The front lip
-        # limits the visible surface while the back edge stays at row 50.
-        px,py,width,height=POT
-        texture=self.sprites['pot'].texture
-        scale=min(width/texture.width,height/texture.height)
-        sx=texture.width*scale/700
-        sy=texture.height*scale/518
-        def point(x,y):
-            return self.xy(px+x*sx,py+(259-y)*sy)
+    def build_remaining_broth(self):
+        from PIL import Image, ImageDraw
 
+        surface=Image.new('RGBA',(700,518))
+        draw=ImageDraw.Draw(surface)
         back,front=[],[]
         for x in range(-224,225,4):
             liquid_depth=72*math.sqrt(max(0.,1-(x/225)**2))
@@ -815,14 +814,25 @@ class HECookingScene(BaseGameView):
             top=max(122-liquid_depth,99-rim_depth)
             bottom=min(122+liquid_depth,99+rim_depth)
             if bottom>=top:
-                back.append(point(x,top))
-                front.append(point(x,bottom))
-        arcade.draw_polygon_filled(back+front[::-1],(158,101,31))
+                back.append((350+x,top))
+                front.append((350+x,bottom))
+        draw.polygon(back+front[::-1],fill=(158,101,31,255))
         for index in range(10):
             fraction=index/9
-            arcade.draw_ellipse_filled(*point(0,121),380*sx*self.scale*(1-.5*fraction),
-                                       111*sy*self.scale*(1-.5*fraction),
-                                       (174+int(45*fraction),111+int(42*fraction),34+int(22*fraction)))
+            rx,ry=190*(1-.5*fraction),55.5*(1-.5*fraction)
+            draw.ellipse((350-rx,121-ry,350+rx,121+ry),
+                         fill=(174+int(45*fraction),111+int(42*fraction),34+int(22*fraction),255))
+        self.sprites['remaining_broth']=arcade.Sprite(arcade.Texture(surface))
+
+    def draw_remaining_broth(self):
+        px,py,width,height=POT
+        texture=self.sprites['pot'].texture
+        scale=min(width/texture.width,height/texture.height)
+        sprite=self.sprites['remaining_broth']
+        sprite.position=self.xy(px,py)
+        sprite.width=texture.width*scale*self.scale
+        sprite.height=texture.height*scale*self.scale
+        arcade.draw_sprite(sprite)
 
     def draw_lift_jug(self, displacement=0., empty=False):
         name='jug_empty' if empty else 'water_jug'
@@ -1246,6 +1256,9 @@ class HECookingScene(BaseGameView):
             arcade.draw_rect_filled(arcade.XYWH(w/2,h/2,w,h),(255,255,255,int(min(1,self.return_time/1.8)*255)))
         self.draw_pause_overlay()
 
+    def can_place_bowl(self):
+        return self.meal.carrying and self.meal.warning_read
+
     def interact_lab(self):
         m=self.meal
         if self.nearest=='kitchen':
@@ -1256,7 +1269,7 @@ class HECookingScene(BaseGameView):
             elif m.bowl_placed:
                 self.do('return_empty');self.return_time=0.;self.keys.clear()
             else:m.feedback='Before returning, I want to make something warm.'
-        elif self.nearest=='table' and m.carrying:
+        elif self.nearest=='table' and self.can_place_bowl():
             if self.do('place_bowl'):self.audio.play('click')
 
     def on_key_press(self,key,modifiers):
@@ -1276,6 +1289,10 @@ class HECookingScene(BaseGameView):
     def on_key_release(self,key,modifiers):
         self.keys.discard(key)
         if key==arcade.key.SPACE:self.stirring=False
+        move_keys = {arcade.key.W, arcade.key.A, arcade.key.S, arcade.key.D,
+                     arcade.key.UP, arcade.key.DOWN, arcade.key.LEFT, arcade.key.RIGHT}
+        if not (self.keys & move_keys):
+            self.player.stop_footstep()
     def on_deactivate(self):
         self.keys.clear();self.stirring=False;self.cancel_hold();self.ignore_release=True
 
@@ -1305,6 +1322,12 @@ class HECookingScene(BaseGameView):
                 self.do('read_warning');self.modal=None
             return
         if self.mode!='counter':return
+        if self.meal.phase=='pickup' and self.inside(x,y,BOWL):
+            if self.do('pick_up'):
+                self.mode='lab'
+                self.player.place(410, 350 + FEET_OFFSET)
+                self.keys.clear()
+            return
         if self.inside(x,y,SWITCH):
             self.console_open=not self.console_open
             self.console_hint=False
@@ -1379,13 +1402,6 @@ class HECookingScene(BaseGameView):
             self.start_serving()
             return
         if self.inside(x,y,HOLO_HIT):return
-        if p=='pickup' and self.inside(x,y,BOWL):
-            if self.do('pick_up'):
-                self.mode='lab'
-                self.player.place(410, 350 + FEET_OFFSET)
-                self.keys.clear()
-            return
-
     def on_mouse_release(self,x,y,button,modifiers):
         if button!=arcade.MOUSE_BUTTON_LEFT:return
         self.adjusting_power=False

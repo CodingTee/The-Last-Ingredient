@@ -210,7 +210,10 @@ class FutureLabView(BaseGameView):
 
         feet = self.player.y - FEET_OFFSET
         edge = max(125, 125 + (feet - 290) * 1.2)
-        self.player.place(max(edge, min(WORLD_W - edge, self.player.x)), self.player.y)
+        clamped_x = max(edge, min(WORLD_W - edge, self.player.x))
+        if clamped_x != self.player.x:
+            self.player.x = clamped_x
+            self.player.sprite.center_x = clamped_x
         self._follow_camera(dt)
 
         # Station proximity detection
@@ -512,6 +515,10 @@ class FutureLabView(BaseGameView):
 
     def on_key_release(self, key, modifiers):
         self.keys.discard(key)
+        move_keys = {arcade.key.W, arcade.key.A, arcade.key.S, arcade.key.D,
+                     arcade.key.UP, arcade.key.DOWN, arcade.key.LEFT, arcade.key.RIGHT}
+        if not (self.keys & move_keys):
+            self.player.stop_footstep()
 
     def on_mouse_press(self, x, y, button, modifiers):
         if button != arcade.MOUSE_BUTTON_LEFT:

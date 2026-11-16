@@ -1,0 +1,26 @@
+[
+  {
+    "id": "pot",
+    "prompt": "Create one isolated EMPTY cooking pot sprite for this exact 1910 royal kitchen range. Reference image is the stove and specifies camera/perspective and lighting. The camera looks DOWN at the stove top: match the stove burner ellipses, with the pot mouth an open broad ellipse with vertical diameter about 48 percent of horizontal diameter, NOT a narrow slit. A squat practical dark cast iron soup pot, subtle bronze warm edge highlights, two small loop handles left and right, slightly tapered inner walls visible and clean dark empty interior. We must clearly see deep interior walls and the elliptical bottom; no food or water, no lid, no steam, no stand, no ground shadow, no glow. Entire pot including both handles, centered on transparent background. Crisp restrained hand-painted 2D game sprite consistent with reference, clean metal details, no dirt. Side wall shorter than the visible opening depth, camera higher than a standard front-view pot. Perfectly horizontal elliptical rim, symmetrical vessel, readable continuous elliptical lip.",
+    "reference": "TheLastIngredient/assets/royal/range_fill_closeup_v1.png",
+    "source": "generated_images/exec-e529e1e2-1928-4f7e-9643-e7c1c40f36e8.png",
+    "export_crop": [
+      62,
+      67,
+      1522,
+      953
+    ]
+  },
+  {
+    "id": "grain",
+    "prompt": "Create ONE SINGLE pearl barley grain as an isolated 2D cooking game sprite matching this reference grain pile. One elongated small pale ivory golden oval cereal grain, about twice as long as wide, a clear narrow lengthwise crease down its center, softly rounded ends, restrained warm lighting and subtle natural texture. Viewed from above. Horizontal long axis. NOT a pile, not two grains, not a bean, not rice. No shadow, no glow, no text, transparent background. Crisp hand-painted illustration, enough detail to read at 10 pixels long.",
+    "reference": "TheLastIngredient/assets/royal/barley_v2/pearl_barley.png",
+    "source": "generated_images/exec-a7a2595e-d7b8-400d-b4e1-2cf9c7ef08bb.png",
+    "export_crop": [
+      299,
+      197,
+      1463,
+      685
+    ]
+  }
+]
