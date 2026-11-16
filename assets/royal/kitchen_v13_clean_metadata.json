@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-29",
+  "tool": "built-in image_gen",
+  "use_case": "style-transfer / precise-object-edit",
+  "source": "exec-0a68279f-5552-4dbf-a8ce-e85ccec0c196.png",
+  "edit_target": "Royal_Kitchen_Detailed_Rerender.png",
+  "size": [
+    1586,
+    992
+  ],
+  "changes": [
+    "reduced mottled stone and gritty floor texture",
+    "cleaner wood and iron",
+    "removed saturated blue floor reflection",
+    "preserved full composition and two flush lids"
+  ],
+  "runtime_replaced": false
+}

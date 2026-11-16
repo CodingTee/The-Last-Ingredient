@@ -1,0 +1,17 @@
+[
+  {
+    "id": "door_open",
+    "prompt": "Using kitchen reference, isolate its right arched wooden door as an OPEN doorway game overlay: tall narrow rounded arch opening, amber-lit simple stone side corridor visible within opening, brown wood door with two dark iron straps hinged RIGHT swung toward RIGHT. No arch stone frame, no surrounding wall or floor outside threshold; genuine transparency around silhouette. Same camera frontal slightly elevated, exact restrained taupe/amber palette. No people no text. Opening ratio roughly1:2.5.",
+    "source": "generated_images/exec-433a8660-95d3-4afa-a187-52ff12a310a0.png"
+  },
+  {
+    "id": "chef_back",
+    "prompt": "Using sprite sheet reference chef ONLY: same brown-haired bearded male chef in white double-breasted coat, white apron tied behind, dark trousers/brown boots. Full-body back three-quarter view walking away toward upper RIGHT, relaxed arms, no items. Single isolated transparent character, same painted style/proportions, no others, no text.",
+    "source": "generated_images/exec-ba96423f-1572-4fca-8768-13c665571082.png"
+  },
+  {
+    "id": "spoon_rest",
+    "prompt": "One small plain white oval ceramic spoon-rest saucer, shallow elongated dish, slightly elevated frontal view, clean warm painted style for c1910 royal kitchen. Isolated transparent prop, no spoon no text no background.",
+    "source": "generated_images/exec-82d8f833-2d78-4c98-b46a-4ac7724706ff.png"
+  }
+]

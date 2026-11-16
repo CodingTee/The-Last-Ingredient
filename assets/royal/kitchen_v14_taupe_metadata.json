@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-29",
+  "tool": "built-in image_gen",
+  "source": "exec-b8c1c856-28d6-4e81-b8ab-0bea15210d68.png",
+  "target": "Royal_Kitchen_Clean_v13.png",
+  "wall_color_reference": "codex-clipboard-81691a57-3923-487d-8d47-10ba4ce5a06a.png",
+  "actual_size": [
+    1586,
+    992
+  ],
+  "changes": "muted taupe stone walls with local warm lamp illumination; clean floor and existing freestanding stove retained",
+  "runtime_replaced": false
+}

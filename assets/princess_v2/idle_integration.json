@@ -1,0 +1,10 @@
+{
+  "idle": "princess_idle_wearing_ring_trimmed.png",
+  "display": "princess_standing_ring_trimmed.png",
+  "seated": "princess_seated_wearing_ring_trimmed.png",
+  "display_dialogue_lines": [
+    3,
+    4
+  ],
+  "backup": "TheLastIngredient\\backups\\princess_idle_before_20261109_132417"
+}

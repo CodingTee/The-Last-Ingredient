@@ -1,0 +1,12 @@
+[
+  {
+    "id": "salt_spoon_empty",
+    "prompt": "Transparent isolated cooking game sprite, clean hand-painted c1910 royal kitchen style, warm natural brown wood with soft amber light, slightly elevated front three-quarter view. One small plain wooden teaspoon, shallow oval bowl LOWER LEFT, short handle UPPER RIGHT, EMPTY bowl. Entire spoon fully visible, same diagonal composition, no hand no background no glow no text no other props.",
+    "source": "generated_images/exec-a62fb0d6-1041-4e99-8ca2-3ab401e065e5.png"
+  },
+  {
+    "id": "salt_spoon_loaded",
+    "prompt": "Transparent isolated cooking game sprite, clean hand-painted c1910 royal kitchen style, warm natural brown wood with soft amber light, slightly elevated front three-quarter view. One small plain wooden teaspoon, shallow oval bowl LOWER LEFT, short handle UPPER RIGHT, carrying one modest rounded spoonful of fine WHITE SALT, visibly distinct tiny white grains. No colored powder. Entire spoon fully visible, same diagonal composition, no hand no background no glow no text no other props.",
+    "source": "generated_images/exec-02231efb-9cf1-4613-8ce3-ce7560a6ad4c.png"
+  }
+]

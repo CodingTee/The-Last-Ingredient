@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-29",
+  "tool": "built-in image_gen",
+  "source": "exec-6bf5272d-e947-4956-aa23-3870094bfa95.png",
+  "edit_target": "Royal_Kitchen_Dark_Taupe_Walls_v15.png",
+  "reference_role": "user screenshot floor color/exposure only",
+  "size": [
+    1586,
+    992
+  ],
+  "change": "darker gray-brown matte stone floor with local amber and subdued cool window light; clean tile geometry preserved",
+  "runtime_replaced": false
+}

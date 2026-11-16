@@ -1,0 +1,6 @@
+新增资源：broth_surface.png（金黄色清汤表面，透明 PNG）。
+生成方式：内置 image_gen，未使用 CLI/API fallback。
+用途：替换装碗阶段的蓝色水面；其余料理食材与厨具沿用此前生成的独立 sprite。
+
+Final prompt:
+Use case: stylized-concept. Asset type: single transparent PNG game sprite layer for first-person 2D anime cooking game. Generate ONLY one flat horizontal oval surface of warm clear golden chicken broth viewed from about 40 degrees above, wide ellipse width to height ratio about 2.1:1, very subtle small golden oil droplets, calm smooth edible clear light amber soup with delicate warm highlights. Clean high-end hand-painted 2D anime inventory art, warm kitchen illumination. Entire oval visible centered with empty transparent margin. This is a liquid surface layer to be composited inside a ceramic bowl, so NO bowl, NO vessel, NO rim, NO spoon, NO ingredients, NO steam, NO text, NO blue color, NO cast shadow. Genuinely transparent background outside the elliptical liquid surface. Crisp clean alpha edge, high resolution.

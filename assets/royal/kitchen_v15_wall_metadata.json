@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-29",
+  "tool": "built-in image_gen",
+  "source": "exec-e8419bbc-ae1c-4083-ac96-63bbe5ba597d.png",
+  "target": "Royal_Kitchen_Taupe_Walls_v14.png",
+  "color_reference": "codex-clipboard-81691a57-3923-487d-8d47-10ba4ce5a06a.png",
+  "size": [
+    1586,
+    992
+  ],
+  "upper_wall_patch_mean_rgb": {
+    "reference": [
+      67.9,
+      48.6,
+      42.6
+    ],
+    "previous": [
+      105.5,
+      81.6,
+      70.1
+    ],
+    "current": [
+      62.0,
+      46.0,
+      43.1
+    ]
+  },
+  "runtime_replaced": false
+}

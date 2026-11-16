@@ -1,0 +1,52 @@
+{
+  "version": 8,
+  "flue": "rear outlet behind body below stovetop, connector concealed; wall chimney above",
+  "visible_vertical_pipe": false,
+  "pot_anchors": {
+    "left": [
+      286,
+      532
+    ],
+    "right": [
+      406,
+      532
+    ]
+  },
+  "sources": {
+    "raw": {
+      "file": "exec-30bd5e6a-d209-45e4-bbf4-cedb4efe59e1.png",
+      "size": [
+        1586,
+        992
+      ]
+    },
+    "prepared": {
+      "file": "exec-e8cc4865-b6c7-495b-bbfe-c53cfea66f6a.png",
+      "size": [
+        1586,
+        992
+      ]
+    },
+    "boil": {
+      "file": "exec-7fbe3bed-7063-40d7-8864-725c78265652.png",
+      "size": [
+        1586,
+        992
+      ]
+    },
+    "simmer": {
+      "file": "exec-891d4273-ceba-4af4-a448-93b16d5a5741.png",
+      "size": [
+        1586,
+        992
+      ]
+    },
+    "transfer": {
+      "file": "exec-ffd882ed-7f57-41d1-8d07-a7de1f601a06.png",
+      "size": [
+        1586,
+        992
+      ]
+    }
+  }
+}

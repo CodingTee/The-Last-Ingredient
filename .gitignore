@@ -1,0 +1,58 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# C extensions / build artifacts
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing & Type Checking
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+
+# Local diagnostic test renders & tools
+renders/
+backups/
+tools/
+*.bak
+*.v640bak
+
+# Local runtime save & error logs
+user_progress.json
+game_error.log
+*.log
+
+# Operating System & IDE files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.agents/
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv/

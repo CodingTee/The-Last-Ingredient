@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-29",
+  "tool": "built-in image_gen",
+  "source": "exec-ea6c3e11-ed26-4bcf-97f4-dd51a46102b0.png",
+  "reference": "Royal_Kitchen_Dark_Walls_And_Floor_v16.png",
+  "size": [
+    1586,
+    992
+  ],
+  "direction": "clean illustrative redraw, broad smooth wall/floor/wood shading, muted dark taupe palette, crisp shapes and selective food/utensil detail",
+  "runtime_replaced": false
+}

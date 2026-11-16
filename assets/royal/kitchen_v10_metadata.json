@@ -1,0 +1,52 @@
+{
+  "version": 10,
+  "burner_lids": 2,
+  "flue": "concealed rear outlet",
+  "pot_anchors": {
+    "left": [
+      286,
+      532
+    ],
+    "right": [
+      409,
+      532
+    ]
+  },
+  "sources": {
+    "raw": {
+      "file": "exec-d841bb9c-d265-4d5c-9ddc-08af87c5121b.png",
+      "size": [
+        1586,
+        992
+      ]
+    },
+    "prepared": {
+      "file": "exec-b7092476-62a2-4cf6-a848-65595faf3220.png",
+      "size": [
+        1586,
+        992
+      ]
+    },
+    "boil": {
+      "file": "exec-8fa85519-fdad-4f29-9002-b4d585fa608e.png",
+      "size": [
+        1586,
+        992
+      ]
+    },
+    "simmer": {
+      "file": "exec-216e3767-1859-4506-82e6-1f4c8c762513.png",
+      "size": [
+        1586,
+        992
+      ]
+    },
+    "transfer": {
+      "file": "exec-0b923b26-62ca-4987-920d-a6fe303b3718.png",
+      "size": [
+        1586,
+        992
+      ]
+    }
+  }
+}

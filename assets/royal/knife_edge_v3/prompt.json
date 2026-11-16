@@ -1,0 +1,6 @@
+{
+  "source": "generated_images/exec-1e009583-1b65-4118-ad3c-3e57a5468d70.png",
+  "prompt": "Cooking animation asset. Image1 is the required knife identity and vertical centerline. Image2 shows too much sideways slant. Create a raised cooking pose of the SAME knife as image1: handle points straight DOWN, blade points straight UP, blade tip directly above center of handle. Show a very narrow sliver of blade face beside the silver spine to suggest a 45-degree tilt toward the chopping board. Blade face only about ONE handle width, visible length about twice handle length, no lateral lean, nearly parallel handle/blade centerline. Same dark brown wood and three brass rivets as image1. Isolated on genuine transparent background, no hands, no food, no text, no shadows. Clean warm painted culinary game sprite.",
+  "tool": "built-in image_gen",
+  "orientation": "screen vertical, raised tilt with narrow visible blade face"
+}

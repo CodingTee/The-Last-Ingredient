@@ -1,0 +1,14 @@
+{
+  "tool": "built-in image_gen",
+  "source": "generated_images/exec-5e2a5235-b056-4c9a-bcc2-cf5b8bb47509.png",
+  "prompt": "Use case: precise-object-edit. Regenerate a full panoramic illustrated royal kitchen game background, c1910 fictional European royal household. Image 1 is the PRIMARY edit target and authoritative wall/floor/material/palette reference. Preserve its subtle mottled stone wall blocks and gray taupe brown colors, worn gently textured stone floor, soft painterly reflected amber light on left and restrained blue window reflections on right, original wood grain and overall natural material detail. Do NOT simplify into flat smooth plastic slabs, do NOT increase contrast/saturation, do NOT bleach walls beige. Image 2 is ONLY reference for corrected kitchen equipment/details: replace Image1's fireplace alcove and vertical pipe with Image2's freestanding closed black cast-iron coal range standing in front of the uninterrupted flat stone wall; exactly TWO equal-size well-spaced simple oval iron lids on top, empty stove with no painted pot, no random lines crossing lids, front firebox door and ash vent coherent. Preserve image1 wall texture in the former alcove region. Use image2's three separate copper hanging utensils by right window, each single straight handle on its own hook with distinct head, and its single tied white flour sack on right crate, no malformed second sack/jar. All remaining composition and materials follow IMAGE1: central wood prep table, knife flat on cutting board beside carrots/onion, blue-white ceramics, baskets, barrels, pantry shelves, red sun banner, arched door and two blue windows. Match all object perspective. Crisp clearly drawn edges with subtle stone/wood textures, no blur, grime or sharpening halos. Full room edge-to-edge approximately16:10 landscape, no people, no UI, no lettering, no borders. This is a new full image integrating Image1 natural textures and restrained coloring with ONLY Image2 improved range/utensils/sack design.",
+  "references": [
+    "codex-clipboard-6e624135-b034-4b83-8f44-2045b8f4226b.png (wall/floor texture and palette)",
+    "codex-clipboard-c718bf2a-1ea0-4e71-9985-2747879df4ba.png (equipment details)"
+  ],
+  "runtime_integrated": false,
+  "size": [
+    1585,
+    992
+  ]
+}

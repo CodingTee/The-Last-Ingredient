@@ -1,0 +1,6 @@
+{
+  "tool": "built-in imagegen",
+  "prompt": "Edit this exact chibi princess into her everyday idle standing pose for the same game. Preserve EXACT character identity, big head small child body proportions, face, brown curls, pink bow, pink 1910 lace dress, brown boots, facing LEFT, smooth clean cel shading and dark outlines, full body. Change ONLY arms hands and ring placement: both arms relaxed down beside her skirt, fingers naturally slightly curved, visible near-side hand outside skirt silhouette. The same SMALL gold sun-and-vine heirloom signet ring is now WORN properly around the ring finger of the visible near-side hand. Ring is finger-sized subtle gold accent, not giant; she is NOT holding or pinching a loose ring, NOT presenting a ring, NOT raising hands at chest. No loose ring anywhere. Gentle smile waiting and listening. Transparent background alpha zero outside figure, no halo or shadow no text. Head, feet and silhouette scale consistent with reference so standing sprites can swap without size jump.",
+  "usage": "Idle: ring worn on lowered hand. Introduction dialogue only: use princess_standing_ring.png and ring_hands_closeup.png.",
+  "installed": false
+}

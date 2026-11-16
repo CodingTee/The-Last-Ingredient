@@ -1,0 +1,15 @@
+[
+  {
+    "key": "kitchenMap",
+    "prompt": "Use case: precise-object-edit. Conservative clarity restoration of the attached full-room RPG kitchen background, NOT the first-person stove. Preserve the exact whole-room layout, proportions, perspective, floor grid, doorway at far left, back wall cabinets, fridge, sink, windows, stove and their exact pixel-relative locations. Keep foreground floor empty: no table and no loose items, these will be independent sprites. Refine blurry painted edges and unclear cabinet hardware into crisp clean high-end 2D anime game environment detail matching sharp inventory sprites. Keep warm dim cinematic lighting, dark walnut wood, cream tiles, ivory curtains, subdued stone floor; consistent outlined anime linework, clear structural edges, smooth shadow gradients, clean restrained textures. No gritty sharpened pixels, no halos, no excessive marble noise, no bloom or blur. Request native 3356 by 1874 pixels if supported, do not add fake detail noise. Preserve full rectangular canvas with no borders and exact scene composition.",
+    "referenced_image_paths": [
+      "TheLastIngredient\\assets\\Scene 7\\backgrounds\\kitchen.png"
+    ],
+    "transparent_background": false
+  },
+  {
+    "key": "kitchenTable",
+    "prompt": "Use case: stylized-concept. Asset: one independent transparent PNG furniture sprite for a high-end hand-painted 2D anime RPG interior map. A modest small rectangular dark walnut kitchen eating table with exactly two matching wooden chairs, one centered behind the table at the upper side facing the viewer and one centered on the near side with its back facing viewer, opposite seats. Elevated orthographic 3/4 RPG view looking down at approximately 45 degrees, back-wall horizontal lines horizontal, vertical chair posts vertical, no isometric diamond rotation. Front table edge horizontal. Rounded rectangular top warm medium dark brown wood, clean sturdy legs, simple domestic furniture, subtly cream upholstered seats, fits a tidy vintage kitchen. EMPTY tabletop: no food, no flowers, no tablecloth, no props. Include BOTH entire chairs, entire table and all feet, isolated with clean alpha, generous transparent margin. Warm golden light from upper left, understated dark contact shadows only immediately beneath feet. Same crisp 2D anime outline and smooth painted shading as an RPG kitchen map, not photoreal, no background, no floor, no text. The upper chair seat must be visible and suitable for overlaying a small front-facing seated character, whose lower legs can be occluded by the table.",
+    "transparent_background": true
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "source": "generated_images/exec-dad418ed-19a1-4fa9-a2c8-79b2034c3b33.png",
+  "prompt": "Revise the exact matte cast iron pot in this reference. Preserve its matte charcoal material, warm LEFT reflection and cool RIGHT reflection, broad visible interior opening, two handles, and camera angle. The current pot is too shallow: extend ONLY the cylindrical side wall DOWNWARD noticeably, so the overall pot silhouette is DEEPER: total width divided by total height should be about 1.40, instead of the reference's 1.65. Keep the same width and the same top elliptical opening (mouth width / mouth height about 1.8). Add about 150 units of vertical side-wall depth below the FRONT rim, in a 1600-unit-wide pot. Make room by expanding the transparent canvas downward; do not shrink or squash the mouth. A moderately deep 1910 soup pot, not a shallow saute pan. Keep the handle mounting next to the upper side walls. Smooth continuous matte iron body, no extra gold trim, no shiny bronze edging, no lid, no food or liquid, no background, no ground shadow. Only this one empty pot as a clean transparent sprite. Preserve the higher viewing angle.",
+  "material_prompt": "Edit this exact isolated cooking pot sprite for our fictional European royal household kitchen circa 1910. Preserve its camera viewpoint looking down into the broad elliptical opening, horizontal rim, two practical loop handles, restrained hand-painted style and transparent background. Make the vessel modestly DEEPER by extending the dark cast iron side walls downward about 18 percent; keep the opening broad and readable. It should be a practical medium-deep soup/stew pot, not a shallow braiser, not a tall stockpot. REMOVE the continuous gold-looking rim trim: the rim and handles are the SAME dark charcoal cast iron as the body. Only soft subtle amber reflected light on the LEFT and muted cool light on the right; no golden metal stripe, no gilding, no shiny bronze edging. Clean matte seasoned iron, gentle realistic texture, no soot blotches, no modern plastic, no glass. Empty dark interior with visible inner walls, no water, no food, no lid, no steam. Same centered silhouette, all handles fully included. Crisp transparent sprite with no background glow or ground shadow.",
+  "geometry": {
+    "cx": 731,
+    "cy": 346,
+    "rx": 585,
+    "ry": 315,
+    "description": "Inner lip calibrated in original generated pixels; cropped coordinates are computed on export."
+  },
+  "crop": [
+    8,
+    3,
+    1476,
+    1057
+  ]
+}

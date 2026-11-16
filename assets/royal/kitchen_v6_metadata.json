@@ -1,0 +1,65 @@
+{
+  "version": 6,
+  "settled_range_art": "complete backgrounds; no plate or settled-pot sprites",
+  "pot_centers_cooking": {
+    "left": [
+      303,
+      530
+    ],
+    "right": [
+      403,
+      530
+    ]
+  },
+  "sources": {
+    "raw": {
+      "file": "exec-70463300-e247-4994-b583-6f340306eba6.png",
+      "native_size": [
+        1586,
+        992
+      ]
+    },
+    "prepared": {
+      "file": "exec-9a3a2376-0fa6-4860-b8e5-17a904a8d372.png",
+      "native_size": [
+        1586,
+        992
+      ]
+    },
+    "boil": {
+      "file": "exec-d6328627-ddc5-4ff9-bddc-05a91daaee15.png",
+      "native_size": [
+        1586,
+        992
+      ]
+    },
+    "simmer": {
+      "file": "exec-15770fb7-6601-40f2-b1c4-2867265b1a6d.png",
+      "native_size": [
+        1586,
+        992
+      ]
+    },
+    "transfer": {
+      "file": "exec-9210cf0d-fa89-4c2c-94a4-225ef24e6b98.png",
+      "native_size": [
+        1586,
+        992
+      ]
+    },
+    "moving_pot": {
+      "file": "exec-a1e7d6de-866d-4baf-bec7-5cf9551364f5.png",
+      "native_size": [
+        1774,
+        887
+      ]
+    }
+  },
+  "state_selection": {
+    "prep": "raw or prepared",
+    "fill": "prepared",
+    "boil": "boil",
+    "drag": "transfer plus moving-pot sprite",
+    "simmer/away/returned/serve": "simmer"
+  }
+}

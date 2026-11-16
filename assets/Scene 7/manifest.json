@@ -1,0 +1,254 @@
+{
+  "kitchen": {
+    "file": "backgrounds/kitchen.png",
+    "size": [
+      1678,
+      937
+    ],
+    "alpha": false,
+    "category": "backgrounds"
+  },
+  "prep_background": {
+    "file": "backgrounds/prep_background.png",
+    "size": [
+      1672,
+      941
+    ],
+    "alpha": false,
+    "category": "backgrounds"
+  },
+  "sink_background": {
+    "file": "backgrounds/sink_background.png",
+    "size": [
+      1672,
+      941
+    ],
+    "alpha": false,
+    "category": "backgrounds"
+  },
+  "stove_background": {
+    "file": "backgrounds/stove_background.png",
+    "size": [
+      1672,
+      941
+    ],
+    "alpha": false,
+    "category": "backgrounds"
+  },
+  "bowl_empty": {
+    "file": "sprites/bowl_empty.png",
+    "size": [
+      1003,
+      817
+    ],
+    "alpha": true,
+    "category": "sprites"
+  },
+  "bowl_soup": {
+    "file": "sprites/bowl_soup.png",
+    "size": [
+      1003,
+      818
+    ],
+    "alpha": true,
+    "category": "sprites"
+  },
+  "burner_knob": {
+    "file": "sprites/burner_knob.png",
+    "size": [
+      916,
+      1022
+    ],
+    "alpha": true,
+    "category": "sprites"
+  },
+  "chopsticks": {
+    "file": "sprites/chopsticks.png",
+    "size": [
+      1263,
+      885
+    ],
+    "alpha": true,
+    "category": "sprites"
+  },
+  "cutting_board": {
+    "file": "sprites/cutting_board.png",
+    "size": [
+      1697,
+      673
+    ],
+    "alpha": true,
+    "category": "sprites"
+  },
+  "eggs_carton": {
+    "file": "sprites/eggs_carton.png",
+    "size": [
+      747,
+      828
+    ],
+    "alpha": true,
+    "category": "sprites"
+  },
+  "egg_fried": {
+    "file": "sprites/egg_fried.png",
+    "size": [
+      947,
+      725
+    ],
+    "alpha": true,
+    "category": "sprites"
+  },
+  "egg_raw": {
+    "file": "sprites/egg_raw.png",
+    "size": [
+      908,
+      566
+    ],
+    "alpha": true,
+    "category": "sprites"
+  },
+  "knife": {
+    "file": "sprites/knife.png",
+    "size": [
+      1441,
+      631
+    ],
+    "alpha": true,
+    "category": "sprites"
+  },
+  "ladle": {
+    "file": "sprites/ladle.png",
+    "size": [
+      1222,
+      946
+    ],
+    "alpha": true,
+    "category": "sprites"
+  },
+  "noodles_cooked": {
+    "file": "sprites/noodles_cooked.png",
+    "size": [
+      1375,
+      555
+    ],
+    "alpha": true,
+    "category": "sprites"
+  },
+  "noodles_dry": {
+    "file": "sprites/noodles_dry.png",
+    "size": [
+      1529,
+      764
+    ],
+    "alpha": true,
+    "category": "sprites"
+  },
+  "oil_bottle": {
+    "file": "sprites/oil_bottle.png",
+    "size": [
+      374,
+      1022
+    ],
+    "alpha": true,
+    "category": "sprites"
+  },
+  "pan_empty": {
+    "file": "sprites/pan_empty.png",
+    "size": [
+      1611,
+      777
+    ],
+    "alpha": true,
+    "category": "sprites"
+  },
+  "pot_empty": {
+    "file": "sprites/pot_empty.png",
+    "size": [
+      1153,
+      896
+    ],
+    "alpha": true,
+    "category": "sprites"
+  },
+  "shell_fragment": {
+    "file": "sprites/shell_fragment.png",
+    "size": [
+      551,
+      431
+    ],
+    "alpha": true,
+    "category": "sprites"
+  },
+  "shell_half": {
+    "file": "sprites/shell_half.png",
+    "size": [
+      843,
+      726
+    ],
+    "alpha": true,
+    "category": "sprites"
+  },
+  "shell_saucer": {
+    "file": "sprites/shell_saucer.png",
+    "size": [
+      936,
+      581
+    ],
+    "alpha": true,
+    "category": "sprites"
+  },
+  "spatula": {
+    "file": "sprites/spatula.png",
+    "size": [
+      1347,
+      873
+    ],
+    "alpha": true,
+    "category": "sprites"
+  },
+  "water_surface": {
+    "file": "sprites/water_surface.png",
+    "size": [
+      1773,
+      505
+    ],
+    "alpha": true,
+    "category": "sprites"
+  },
+  "broth_surface": {
+    "file": "sprites/broth_surface.png",
+    "size": [
+      1817,
+      866
+    ],
+    "alpha": true,
+    "category": "sprites"
+  },
+  "kitchen_refined": {
+    "file": "backgrounds/kitchen_refined.png",
+    "size": [
+      1678,
+      937
+    ],
+    "alpha": false,
+    "category": "backgrounds"
+  },
+  "kitchen_table": {
+    "file": "sprites/kitchen_table.png",
+    "size": [
+      1312,
+      1199
+    ],
+    "alpha": true,
+    "category": "sprites"
+  },
+  "chef_seated": {
+    "file": "sprites/chef_seated.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha": true,
+    "category": "sprites"
+  }
+}

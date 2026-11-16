@@ -1,0 +1,499 @@
+The Last Ingredient
+Complete Story Script
+One chance to begin again.
+English Review Edition | 17 October 2026
+This script contains the shared story, both endings, dialogue, character actions, cooking interactions and continuity notes. Scene numbers are references for discussion and revision. They do not prescribe a fixed number of storyboard panels or game levels.
+The Story
+A chef loses his restaurant and home after a food poisoning incident. Through experiences in prehistory, a royal household and the future, he comes to believe that time travel will let him save everyone. He then discovers that the rescues he is planning would cause the very tragedies he has witnessed. His chance to begin again depends on understanding the truth and choosing to leave the past alone.
+The Theme
+The chef once believed that a mysterious final ingredient could make his cooking, and his life, perfect. By the end, he accepts imperfection and finds the courage to keep going. His wife's ordinary breakfast gives that decision a warm, human response. The meaning of the last ingredient emerges through actions rather than an explanatory speech.
+The Royal Setting
+The kitchen and small dining room are separate rooms connected by doors and a short corridor. The girl first speaks with the cook at the kitchen doorway, then waits in the dining room. The future protagonist appears only in the empty kitchen, where she cannot see him. Contamination occurs in the kitchen. Her collapse, the falling ring and the guards' arrival occur in the dining room.
+Reading Order
+Part One: Characters and World Rules
+Part Two: Shared Story, S01-S27
+Part Three: Bad Ending, B01-B07
+Part Four: Happy Ending, H01-H11
+Part Five: Causality and Production Continuity
+Dialogue, internal thoughts and player messages provide a basis for the eventual game script. Paragraphs labelled Staging, Interaction or Continuity are production notes and are not displayed as dialogue.
+Part One Characters and World Rules
+Characters and Emotional Motivations
+The Protagonist / Modern Chef: Dedicated and hardworking, he has gradually become unable to accept failure. After the accident, he acknowledges his failure to isolate an unverified sample, but comes to see this mistake as proof that his whole life has no value. In the bad ending, he keeps trying to control every outcome. In the happy ending, he finally stops and begins caring for himself.
+The Childhood Family Member: The person who first taught him to cook. This edition does not specify which parent or relative they are. Their role is to leave him with a practical kindness: eat first, then face tomorrow. This memory exists in both histories.
+The Tribal Hunter: The identity the protagonist inhabits in the first past memory. He prepares food for the guards as part of the tribe's routine. He does not knowingly serve poison; he has no knowledge of future weapons or compounds.
+The Royal Cook: The protagonist's second past identity. He knows the girl's habits and is happy to make her a simple bowl of soup. He does not know that someone contaminates the salt while he is briefly away.
+The Royal Girl: The original owner of the sun-and-vine ring. Her wish is specific and ordinary: to grow up, have a child and pass on her mother's ring. In the bad ending, she dies and is buried with it. In the happy ending, she grows up and the ring passes through generations to the wife.
+The Future Researcher: The identity the protagonist inhabits in the future. His body has undergone neural adaptation. His laboratory supports food synthesis, research analysis, memory-based targeting and physical time travel. The protagonist can operate this equipment, but does not become all-knowing.
+The Wife: His partner in the revised modern history and a descendant of the royal girl. Her breakfast, her decision to wait for him and their familiar teasing establish a relationship that already has a shared life behind it.
+Supporting Roles: The supplier, colleague, investigator, tribespeople, guards, new homeowners and police provide necessary story information. The supplier has also been deceived. The illegal sellers do not become a separate final villain to hunt down.
+Narrative Viewpoint
+The player generally knows what the protagonist knows. Early clues are visible before their meaning is explained. His internal thoughts are distinguished from the past identities' spoken dialogue. During fixed memories, he cannot change the outcome simply by shouting a warning. The future investigation brings the separate clues together.
+Time Travel and Branch Rules
+1. The tarot cards are a supernatural entry point. The Beast, Crown and Gear connect the three experiences. Their creator is not revealed in this story. Do not imply that the protagonist mailed the cards to himself or introduce an unexplained hidden mastermind.
+2. Prehistory and the royal era are fixed memories. The player cooks, inspects objects and advances dialogue, but cannot prevent their central tragedies during these visits. Incomplete cooking leaves the player at the current step; a minigame mistake does not select the bad ending.
+3. The future is the point at which new choices become possible. The player controls investigation, food preparation and the decision to launch or abort a physical jump. The happy ending is available on the first playthrough.
+4. Physical jumps carry equipment into the past. Consciousness Return, the final return to modern life, transfers awareness alone. Bowls, weapons and other future objects cannot come back with him.
+5. Each physical jump has a limited visit window and automatic recall. Approaching an already connected past identity can trigger an early protective recall. These limits are available before departure; they are not invented during an emergency. His mistake is acting hastily despite the limits.
+6. History can be rewritten. The consciousness connection temporarily preserves his awareness and current experience of the laboratory, allowing him to complete his choice and return. Old memories remain, while memories of the revised life gradually surface. This is a fictional story rule.
+7. The future compound was invented independently. It suits adapted bodies but is toxic to unmodified organisms. Modern scientists discover prehistoric residue and recreate experimental samples; theft and misleading packaging bring those samples into the restaurant. Preventing the ancient contamination removes this sample chain without erasing the future invention.
+8. The happy ending requires understanding the future evidence and explicitly choosing Abort Time Jump. Reading alone is insufficient. Incomplete investigation, reviewing evidence or making no choice leaves the player in the future. Only an explicit Launch begins the bad ending.
+9. This edition allows a player who understands the truth to launch anyway. His reasoning is, "Now I know what goes wrong, I can avoid it." On the happy route, he never revisits either past era after learning the truth.
+10. Egg noodle soup is present from the opening. The missing ingredient is not a physical egg. His future meal is an attempt to encourage the desperate modern self he remembers. His wife's separately prepared breakfast echoes the same dish in a changed life.
+Part Two Shared Story
+S01 Something Is Still Missing
+Setting: A renowned restaurant kitchen after closing. Characters: The protagonist and a colleague.
+Staging: The washing-up falls quiet as staff leave. The chef stands alone before an almost flawless dish. He tastes it, sets down his spoon and adjusts the sauce.
+Colleague: "The customers already said it was delicious."
+Chef: "I know."
+He tastes it again and frowns.
+Chef: "But something's still missing."
+His colleague looks at the clock.
+Colleague: "You said that yesterday."
+The chef does not answer. He crosses out a ratio in his notebook and writes another.
+Staging: Hold on the final line of the page: "The last ingredient?" This expresses his fixation on perfection; it is not the name of a magical item.
+Sound: A refrigerator hum, a spoon touching porcelain and someone switching off a light. No dish score appears.
+S02 The Unverified Sample
+Setting: The restaurant before service. Characters: The chef and his regular supplier.
+The supplier hands him a sample. The outer package makes vague claims about enhancing flavour, but the supporting information is incomplete.
+Supplier: "Someone passed this new sample on to me. They say it brings out the ingredients' natural flavour. I'm still chasing the details."
+Chef: "Where's it from? Do you have the ingredient report?"
+Supplier: "Not everything yet. Hold on to it for now. I'll ask again."
+The chef does not taste it or approve its use. He attaches a clear label: PENDING VERIFICATION — DO NOT USE.
+Chef: "It stays off the menu until we have the report."
+The phone rings. He leaves the package on a shelf beside the preparation area and turns to answer.
+Continuity: He recognises uncertainty but fails to isolate the sample properly. The accident follows from that failure and a later packaging mistake. He does not knowingly test poison, and a legitimate food company is not publicly distributing a known dangerous product.
+S03 The Incident
+Setting: The preparation area and restaurant floor. Staging: A sequence of short shots.
+During tidying, the labelled outer packaging is removed. The inner sachet has no clear identification and resembles a familiar seasoning refill. A busy employee mistakes it for that refill and empties it into a seasoning container.
+Food reaches the tables. A customer puts down their cutlery and clutches their stomach. Other diners call for help. Kitchen noise gives way to ambulance sirens.
+The chef stands before the sealed preparation counter, looking at the inner packet in an evidence bag.
+Chef: "I labelled it. I said not to use it..."
+He looks towards the shelf. Only a torn corner of the yellow label remains.
+Staging: Show poisoning, emergency care, closure and investigation without graphic bodies or an unsupported claim that every customer dies. The protagonist himself does not die in this incident.
+S04 The Investigation and the Loss
+Setting: An interview room, the restaurant and his home. Characters: The chef and an investigator.
+The investigator places a report before him. A diagram shows distinctive branching hexagonal crystals. Let the player see it clearly once.
+Investigator: "This wasn't a seasoning approved for use in food."
+Chef: "Then what was it?"
+Investigator: "A sample from an undisclosed research project. Someone stole it, repackaged it and sold it onto the market."
+He turns a page.
+Investigator: "Your supplier was deceived too. But we still need to establish why it was left in the preparation area, and why the warning was only on the outer packaging."
+The chef lowers his eyes. His hand rests at the report's edge.
+Chef: "...I should have put it somewhere safe."
+Staging: Short time jumps cover the following weeks or months. The restaurant closes; equipment is sold; compensation and debt papers are signed. His losses do not all happen on the day of the incident.
+Finally, he gives up his house keys. He looks back at the kitchen before the door closes behind him.
+Chapter One A Bowl of Noodles
+S05 Outside His Old Home
+Setting: A rainy night after the incident. Character: The protagonist.
+In a worn coat, he stands in a familiar street. His phone shows another job rejection. He switches off the screen and looks at his old house.
+The lights are off. The ornaments by the window have changed, and a stranger's name is beside the door. The new owners are away.
+He walks around the side and tests the back door that never used to latch properly. It opens.
+Chef, quietly: "I'll eat something... then I'll go."
+Staging: He knows it is no longer his home. Entering is a desperate mistake, not an authorised visit. The new owners are not villains.
+S06 Cooking in the Modern Kitchen
+The layout is familiar, but things are in different places. He finds noodles and an egg, turns on the tap and sets a pot on the stove with practised movements. Then he pauses as if even this takes too much energy.
+Interaction: Add water, place noodles in the pot, adjust the heat, fry an egg and serve. Water, steam and visible state changes provide feedback. There is no "perfect dish" rating.
+He places the sunny-side-up egg on the noodles and carries the bowl to the table. The seat opposite is empty.
+Chef, quietly: "Tomorrow... what am I supposed to do tomorrow?"
+Staging: This is the familiar egg noodle soup that returns in the happy ending. Let the quiet establish the loneliness of eating alone.
+Transition: Steam rising from the bowl brings back the sounds of a childhood kitchen.
+S07 The Piece of Eggshell
+Setting: A brief childhood memory, alternating with the modern table.
+The young protagonist cracks an egg into a bowl. A small piece of shell falls in. He stares at it, upset.
+Young Chef: "I've ruined it."
+A family member lifts out the shell with a spoon.
+Family Member: "What have you ruined?"
+Young Chef: "It doesn't look right."
+The family member sets a finished bowl of noodles in front of him.
+Family Member: "Eat first. We'll work out tomorrow when it comes."
+Back in the present, he lifts some noodles, then stops.
+Chef: "And if there's still no answer tomorrow?"
+No one replies. He slowly finishes his meal.
+Continuity: The remembered line belongs to his childhood family, so it exists in the bad-ending history too. It is not a memory sent back by his future self or a line originally spoken by his wife.
+S08 Three Cards at Midnight
+As he clears the table, he finds an unfamiliar small box nearby. Inside are three cards: the Beast, the Crown and the Gear.
+Inside the lid: "What would you do with a chance to begin again?"
+The midnight chime sounds. The clock clearly reads 00:00.
+Interaction: The player can inspect all three cards, then selects the Beast. The other cards cannot yet skip the shared story.
+His fingertips brush the card. The beast's eyes seem to move in the firelight. The plumbing fades into forest wind. The kitchen darkens.
+Sound and Transition: A clock chime, paper under his fingers, a fade and forest ambience. Keep the cards' origin mysterious without introducing an unresolved mastermind.
+Chapter Two The Whistle That Never Sounded
+S09 Someone Else's Body
+Setting: A fictional prehistoric forest where humans and dinosaurs coexist. Characters: The connected hunter and tribespeople.
+He opens his eyes to rough, muddy hands. Several tribespeople surround a green juvenile lying on the grass.
+Tribesperson: "Come and help! We won't be going home empty-handed today."
+He tries to ask where he is, but his body is already moving. The words that emerge belong to the hunter whose memory he inhabits.
+Hunter: "Is it still breathing?"
+Tribesperson: "No."
+Chef, internal: "That isn't my voice..."
+He tries to stop walking. The body continues.
+Player Message: On the first fixed-memory entry, briefly show: "You are experiencing a memory that has already happened." Do not keep interrupting later emotional scenes with this explanation.
+S10 The Triangular Wound
+There is a small triangular wound on the juvenile's neck. A metallic fragment is lodged inside, with a few pale blue crystals nearby.
+Interaction: Inspecting the neck records the clue without changing the death. The player can continue without inspecting it; the future analysis can recall the image.
+Chef, internal: "That wasn't made by a stone spear."
+A tribesperson hands him a rope.
+Tribesperson: "It'll be dark soon."
+His hands take the rope. Together they carry the animal towards camp.
+Continuity: Do not identify the wound as a future poisoned dart yet. Show its appearance. The metal, shape and blue traces must match the later evidence.
+S11 Dinner in the Cave
+Setting: The cave at dusk. Characters: The hunter, tribespeople and two guards.
+Some tend the fire; others prepare meat. Two guards stand at the entrance with bone whistles at their waists. Most of the group are still preparing dinner.
+Tribesperson: "Give the guards theirs first. They've got the whole night ahead of them."
+Interaction: Put meat on the rack, turn it, wait for the cooked colour and portion the first serving. The meat can be properly cooked. The poisoning is not caused by the player's heat control.
+He hands the meat to the guards.
+Guard: "At last. Something worth eating tonight."
+The guard bites into it. The hunter returns to the fire to prepare the next batch.
+Continuity: The guards eat first while the others are still cooking or waiting. Do not show everyone eating simultaneously and then imply that only the guards' early collapse explains the lost warning.
+S12 No Warning
+A dull impact comes from the entrance. One guard drops to his knees. The other grips his throat and reaches for his whistle, but cannot bring it to his mouth.
+The whistle falls. It makes no call.
+Chef, internal: "The meat was cooked... What happened?"
+A huge body blocks the light outside. The mother has followed the trail and scent of her dragged juvenile. She sniffs the blood and sees the remains beside the fire.
+A low growl. The people inside finally look up.
+Staging: Her silhouette, their reaction and the darkened firelight establish the threat. Cut to black without showing every death.
+S13 Three in the Morning
+He wakes at the modern table, clutching his throat and gasping. The clock reads 03:00. The Beast card has faded.
+Chef: "The guards... They didn't even get to sound the alarm."
+He looks at the Crown card. Its gold pattern merges with candlelight.
+Interaction: Continue into the royal memory. He knows a tragedy occurred but does not yet know where the dart or compound came from.
+Chapter Three Something to Pass On
+S14 The Girl at the Kitchen Door
+Setting: A fictional royal residence with a medieval appearance, at night. Characters: The royal cook and the girl.
+He opens his eyes in a cook's body, standing beside a pot. The girl peers around the kitchen doorway. She has not yet gone to the dining table.
+Girl: "The kitchen hasn't gone to sleep yet, has it?"
+Cook: "Hungry again, Your Highness?"
+She nods.
+Girl: "Everything at dinner looked beautiful. But I didn't eat enough."
+The cook smiles.
+Cook: "Then I'll make you some hot soup."
+Staging: Establish an easy, familiar relationship before the tragedy. She is a person with everyday wants, not a stranger introduced only to die.
+S15 The Sun and the Vines
+At the doorway, she rests a hand on a small side table. Her gold ring shows vines curling around a small sun. It is slightly large, but stays on her finger.
+Cook: "You're wearing it again today?"
+Girl: "It was Mother's. She says I can look after it for her now."
+She gently straightens it.
+Cook: "Then you'd better be careful with it."
+Girl: "When I grow up, I'll give it to my child."
+She thinks for a moment.
+Girl: "But I'll wait until their hands are big enough. Otherwise it'll fall off."
+The cook laughs. The protagonist remembers the ring.
+Girl: "Why does your soup taste a little different every time?"
+Cook: "Today's vegetables aren't quite the same as yesterday's."
+Girl: "How do you know when it's the best?"
+Cook: "I'll know when you've finished the bowl."
+Cook: "It's hot in here. Go and sit in the dining room. I'll bring it when it's ready."
+She agrees and walks along the short corridor. The cook leaves the kitchen door mostly closed.
+Continuity: The ring remains hers. An Accept button, if retained, means accepting her request for soup, not accepting the ring as a gift.
+S16 Vegetable Soup on the Stove
+Setting: The kitchen and separate dining room, connected by a short corridor. The door does not give the girl's seat a direct view of the pot or salt jar.
+The cook cuts carrots and potatoes. The girl is already waiting in the dining room. There is no extended conversation through the closed door.
+Interaction: Chop vegetables, add them to the pot and stir. Once preparation is complete, the soup simmers. The familiar white salt jar stays beside the pot.
+Cook: "A little longer. I'm just going to wash my hands."
+He goes to the wash area on the other side of the corridor. The kitchen is temporarily empty. The girl stays in the dining room.
+Staging: Hold briefly on the pot and salt jar. Do not show the future protagonist or reveal the contaminator here.
+S17 When He Returns
+On his way back, the cook hears a faint metallic or glass impact through the kitchen door. He opens it. No one is inside.
+The soup is still simmering. A faint dried blue trace lies along the jar's rim in shadow. The salt as a whole has not visibly changed colour.
+Chef, internal: "Wait... That sound..."
+The cook picks up the familiar jar and seasons the soup. The protagonist feels uneasy, but cannot stop the fixed memory.
+Continuity: He does not witness a stranger escaping and does not see obviously glowing poisoned soup. The audience may notice a trace that he misses; do not give him an unmistakable warning that he then deliberately ignores.
+S18 Soup in the Dining Room
+Setting: The separate small dining room. Characters: The girl and the cook.
+The cook carries the soup out of the kitchen, along the short corridor and places it before her. The kitchen is now offscreen.
+She blows on it and takes a sip.
+Girl: "Today's is lovely t—"
+She stops. The spoon falls from her hand.
+The cook hurries around the table.
+Cook: "Your Highness?"
+She grips his sleeve and tries to speak, but cannot form the words. Her hand loosens, brushes the table edge and the ring slips onto the dining-room floor.
+Staging: Use the interrupted line, hand movements, falling spoon and cook's reaction. Graphic detail is unnecessary.
+S19 No Chance to Explain
+Guards hear the cry and rush into the dining room. One lifts the girl; another restrains the cook.
+Cook: "Get the physician! Help her first!"
+Time cuts: the overturned bowl in the dining room; the kitchen being sealed later; her motionless hand; an attendant retrieving the ring and placing it beside her.
+She dies, and the ring is buried with her. The cook is held responsible for the meal and led down a dark corridor.
+Cook: "I didn't..."
+The door closes. Its sound and the darkness imply his execution without showing it.
+Chef, internal: "Someone came in while I was gone. If I hadn't left..."
+S20 Six in the Morning
+He wakes in the modern house. The clock reads 06:00. The Crown card has faded.
+Chef: "She only wanted a bowl of soup."
+He remembers the wound, the guards, the salt jar and the girl.
+Chef: "The wound on that animal... Whatever was on the salt jar..."
+He turns over the Gear card.
+Chef: "What if this time, I could decide for myself?"
+Chapter Four A Choice at Last
+S21 An Autonomous Connection
+Setting: A future laboratory. Character: The protagonist in the researcher's body.
+He raises his right hand. It obeys. He steps back and turns deliberately. No remembered action forces him to move.
+Screen: Consciousness connection established. Autonomous control enabled.
+Chef: "This time... I'm in control."
+Staging: Establish the food synthesizer, analyser, physical time-jump apparatus and a separately labelled Consciousness Return position. The last two may share equipment, but their functions must be clearly distinguished.
+Interaction: The player can choose stations freely. Investigation has no countdown. The limited visit window begins only after a physical jump launches.
+S22 Food in the Future
+The synthesizer displays its default high-energy nutrient block. It is intended for a neurally adapted body and includes a standard dose of neuro-regulating compound.
+System: "This recipe is intended for users who have completed neural adaptation."
+Chef: "Even dinner comes with a body compatibility check..."
+He checks the connected identity. The researcher meets the recipe's requirements.
+Continuity: Establish why future people use the compound normally. It serves a purpose in compatible bodies; the story is not making a general claim that food additives are inherently bad.
+The machine also has ordinary ingredients in its database: water, grains, vegetables and eggs. The player may browse them now; the completed future meal follows the route decision.
+Sound: Machine hum and interface tones. Recognising the compound's colour alone does not trigger the final realisation.
+S23 A Rescue Plan
+The time apparatus uses the connected memories to identify two destinations: before the juvenile is discovered, and while the royal cook is away from the kitchen.
+Chef: "Before the mother reaches the cave..."
+He switches to the royal coordinates.
+Chef: "Or I could stay with the pot."
+The equipment cabinet holds a defence launcher, a locator and a spare compound vial attached to a field kit. If he leaves without investigating, he takes the kit without checking every component's restrictions.
+Chef: "This time, I can't get it wrong."
+Departure Information: Physical jumps carry items; the window ends with automatic recall; proximity to a connected past identity may trigger early protective recall. Each memory anchor permits only one stable entry, preventing unlimited retries of the same moment.
+Interaction: Investigate at the analyser or explicitly launch. With no choice made, the player remains in the laboratory.
+S24 Evidence One The Wound
+The analyser compares the defence dart's triangular tip with the juvenile's wound. Equipment identifiers and structural records establish a connection to the same type of future weapon, rather than relying only on visual resemblance.
+Archive: The dart contains a neural agent. It is highly toxic to unmodified organisms. Contaminated animals must not be consumed. Normal cooking cannot remove this fictional contamination.
+Chef: "It wasn't undercooked meat... There was already something in it."
+He looks towards the launcher.
+Interaction Feedback: Confirm evidence A once. Clicking it again reopens the information without increasing the evidence count.
+S25 Evidence Two The Salt Jar
+The player examines the vial and its dried residue. The analyser displays the salt jar from the memory beside the sample and confirms the compound's toxicity to unmodified humans.
+He remembers the empty kitchen interval and the impact just before the cook returned.
+Chef: "If I took that into the kitchen..."
+He leaves the thought unfinished. An identical container waits in the equipment cabinet.
+Continuity: The trace is residue from spilled liquid. Do not later change it into unrelated powder, and do not let the girl witness the spill from inside the kitchen.
+S26 Evidence Three The Modern Incident
+The screen shows the branching hexagonal crystals left by the compound over time. He recognises them.
+Chef: "The incident report..."
+Historical archives preserved in the future record an early sample found at an ancient cave site with animal remains, human remains and unusual metal fragments. Researchers later recreated experimental samples. Some were stolen and entered illegal trade.
+The archive also establishes that the future compound was developed independently; the ancient sample was not its sole origin.
+Images connect the wound, fallen guards, cave residue, modern diagram and seasoning packet.
+Chef: "That packet... It didn't come from nowhere."
+S27 The Realisation
+After all three comparisons are confirmed, he stands between the kit and the time machine. The system establishes the material connections. He makes the final inference himself: the equipment he plans to use will leave the traces he has already seen.
+Chef: "I thought I was going back to stop whoever poisoned her. But I'm about to carry the poison in myself."
+He looks at the launcher.
+Chef: "I wanted to save the people in the cave... and I'd shoot the juvenile first."
+A long pause.
+Chef: "The past isn't coming after me. I'm the one trying to go back and do it all again."
+Interaction: Mark the truth as understood only after the combined explanation is read. Return to the decision screen. Reading does not automatically start either ending.
+Part Three Bad Ending
+B01 I Can Still Get It Right
+Entry Condition: The player explicitly selects Launch Time Jump. This route is available before understanding the truth, or after understanding it if the player insists on intervening.
+Without the truth — Chef: "If I get there before it happens, there's still a chance."
+After understanding but insisting — Chef: "Now I know what goes wrong. I just have to avoid it this time."
+Staging: Play only the line matching the investigation state. The second version expresses denial and a need for control; he has not forgotten the evidence he just read.
+The player confirms launch. The intervention route is committed.
+B02 The Future Nutrient Block
+The system recommends replenishing energy before travel. The player selects the nutrient block, confirms body compatibility, starts synthesis and waits for completion.
+The machine injects the standard compound dose for the researcher's body. He eats the block without being poisoned.
+He takes the field kit. If he has read the evidence, add a brief action: he checks the vial's fastening, believes he has made it safe, and still takes it with him.
+Chef: "Come on. There's still time..."
+He enters the physical jump apparatus.
+Continuity: This meal is suitable for the future body. The danger is taking the equipment and compound into an incompatible past. He never deliberately posts poison to his modern self, and the food does not itself cause time travel.
+Sound and Feedback: Recipe confirmation, cooking completion and a departure countdown. The player finishes the future cooking interaction before leaving.
+B03 The Wrong Target
+Setting: High ground in the prehistoric forest. The memory anchor gives him an approximate location, not perfect knowledge of the scene.
+Leaves obstruct his view. A green shape moves towards the camp in the distance, with no clear sense of scale. The visit window is about to close.
+He remembers the huge silhouette at the cave and mistakes the distant creature for the mother.
+Chef: "I can't let it get there."
+He fires. The shape falls. He runs down the slope, slowing as he approaches.
+It is the juvenile. A triangular piece of metal barely protrudes from its neck. Blue payload has entered its body.
+Chef: "No..."
+Distant Tribesperson: "Over here! I've found something!"
+He tries to reach it, but the window ends. Automatic recall pulls him away. His outstretched hand vanishes into white light.
+Continuity: This creates the discovery site seen earlier. Contamination is already inside the animal; simply removing the dart would not revive it or remove the payload. He also lacks time to take the body away.
+B04 One Last Rescue
+He falls back into the laboratory and braces himself against the counter. The prehistoric anchor is marked as spent. It cannot be entered again.
+Chef: "It's too late for them."
+He looks at the royal coordinates.
+Chef: "But I can still save her."
+Staging: One committed mistake leads into the next. Do not reopen the happy-ending option as though cancelling now could undo a physical intervention that has already happened. The player may pause, but the story route is fixed.
+He launches again. A brief echo of the girl's laughter bridges the transition.
+B05 The Person in the Empty Kitchen
+Setting: The royal kitchen. The girl waits in the separate dining room, and the past cook is washing his hands. Neither is in the kitchen.
+The future protagonist appears behind the mostly closed door. The worktop is not visible from the girl's seat.
+He approaches the pot to remove the soup. He believes acting before it is served will save her, while the equipment he carries is bringing the source of contamination into the room.
+The past cook's footsteps approach along the corridor. Afraid of being mistaken for an intruder, and aware that the two connected identities are drawing close, he turns hurriedly towards the side of the counter.
+The kit strikes its edge. The vial falls and breaks. Blue liquid runs across the worktop into the open salt jar, leaving a small trace at the rim.
+He freezes for an instant, then reaches for the jar.
+Chef: "Wait—!"
+An early protective recall takes him in a flash. He does not escape through the door or pass through the dining room.
+A moment later, the past cook opens the door. The kitchen is empty. The soup is still simmering.
+Continuity: The collision is the sound heard in S17. The girl never sees the future visitor. Recall interrupts his attempt to remove the jar; do not give him time for a long speech while leaving the jar untouched.
+B06 The Loop Closes
+Replay the past cook seasoning the soup, carrying it into the dining room, the girl's interrupted sentence and the falling ring. Then recall the juvenile being carried away, the guards eating and the silent whistle. Finally: cave sampling, modern research, the stolen sample and the yellow restaurant label.
+Back in the future, he no longer reaches for the launch control.
+Chef: "It was me... all along."
+Staging: On an uninvestigated route, this is his first complete understanding. On an informed route, it is his admission that he repeated the disaster despite knowing the risk.
+B07 Noon
+He selects Consciousness Return and takes no physical objects with him.
+He wakes on the floor of the modern house. The clock reads 12:00. The lock turns. A new homeowner sees him and immediately backs out through the door.
+Homeowner: "Who are you? How did you get in?"
+He sits up and looks at the kitchen that used to be his.
+Chef: "I'm sorry."
+A short time cut leads to the police arriving. He does not resist. The homeowner and police do not all materialise at the instant he wakes.
+Hold on the cold noodle bowl on the table.
+Achievement: ACHIEVEMENT UNLOCKED — A Fate of My Own Making.
+Chef, voice-over: "I kept looking for the moment it all went wrong. In the end, I was the one who couldn't stop."
+Buttons: Return to Menu; Retry Future Scene.
+Retry Note: Replay begins at the future investigation. Clear temporary evidence and travel states while preserving earned achievements. This is a game replay function, not a fourth tarot card within the story.
+The Bad Ending's Emotional Focus
+Failure is not caused by missing a cooking click or lacking power. Given the equipment, he continues to believe that he must personally fix every outcome, and carries the future contamination into the past himself.
+Keep the ending quiet. Avoid a lengthy moral lecture. The police arrive because he entered someone else's home, not because a time system is punishing him.
+Part Four Happy Ending
+H01 This Time I Will Not Go Back
+Entry Condition: The player has read all three evidence comparisons and the combined explanation, then explicitly selects Abort Time Jump.
+He returns to the control panel. Both destinations still glow. His hand rests beside the launch control.
+Girl, remembered: "When I grow up, I'll give it to my child."
+Then the sound of the falling whistle.
+Chef: "I thought that if I didn't do something, I'd be giving up on them."
+He moves his hand towards Abort.
+Chef: "But this time... staying here is how I let them live."
+The player confirms the cancellation of the prepared physical jump. The coordinates go dark.
+Continuity: This is the decisive choice. Do not add separate requirements to unload a weapon, dismantle the machine or cancel each destination. He visits neither past era.
+H02 What Never Happened
+Staging: Brief narrative inserts show the revised past. These are not additional physical visits or a new machine that lets him watch history.
+Prehistory: The juvenile lifts its head and walks into the trees. Its mother waits in the shade. The cave guards remain at their post, adjusting their whistles. This establishes that this particular contamination-driven tragedy was avoided, not that the tribe will never face danger again.
+The Royal Household: The cook carries soup from the kitchen to the dining room. The girl takes a sip and finishes the sentence once cut short.
+Girl: "Today's is lovely too."
+She draws the bowl closer. The ring remains on her hand.
+Time Passes: The same ring appears on a hand that has grown older, then is handed to the next generation. A few simple transfers show that she grew up and fulfilled her wish.
+Sound: Her completed sentence is the emotional centre. It needs no additional explanatory voice-over.
+H03 The Quiet Left Behind
+He is still beside the darkened control panel in the future. There is no applause or announcement that he has fixed everything.
+Consciousness Return is available. Instead, he first looks at the cooking station, closes the nutrient block recipe and opens the ordinary ingredient database.
+Input: Noodles. Water. Egg.
+Staging: This is a new voluntary action. He uses the machine to make himself a meal rather than to control another person's history.
+H04 For Someone Who Was Ready to Give Up
+The machine asks for a recipe name. He remembers himself sitting in the old house and asking, "And if there's still no answer tomorrow?"
+He enters: Childhood Egg Noodle Soup.
+Recipe Status: Neuro-compound: Not Required.
+Chef: "That version of me... He must still be sitting there."
+He watches the water warm.
+Chef: "If I could just give him a bowl..."
+Continuity: This is longing and encouragement for his remembered self, not a plan to post food into the past. He has already seen the restriction on physical items, but may naturally lift the completed dish before deciding to leave it behind.
+H05 No More Adjustments
+Interaction: Add water, cook the noodles, fry a sunny-side-up egg, serve the broth and place the egg on top. The steps echo the opening meal.
+The egg white has an uneven edge and a little browning. The machine asks, "Adjust presentation?"
+He considers it.
+Chef: "No."
+He lifts the bowl.
+Chef: "It's good just like this."
+Staging: No perfect score appears. Ordinary food is not being presented as technically superior to future cooking. His change is that he no longer needs everything to be flawless.
+H06 The Bowl Stays Here
+He carries the meal to Consciousness Return. The warning lights up again: Physical items cannot be transferred.
+He looks down, pauses and gives a small laugh.
+Chef: "Can't take you with me, then."
+He sets the bowl on a separate work surface beside the return position and lets go.
+Chef: "That's all right."
+He looks at the bowl as though speaking to his desperate former self.
+Chef: "Eat first. We'll work out tomorrow when it comes."
+He steps into the return position empty-handed. The future bowl remains clearly visible, steam rising. Fade to white.
+Continuity: Do not make the bowl disappear immediately before cutting to modern breakfast. A visual echo is welcome, but first establish that he leaves without it and that it remains in the future.
+H07 Wake Up
+His wife's voice comes through the white light.
+Wife: "Wake up."
+A beat.
+Wife: "Your noodles are getting cold."
+He opens his eyes in his own home in the revised history. There are plants by the window, a coat on a chair and the small signs of a shared life. The clock reads 07:30.
+Chef: "You..."
+Wife: "What's wrong? Bad dream?"
+He cannot answer immediately.
+Staging: His hesitation comes from old and new memories not yet settling together. Do not leave him permanently unable to recognise a wife who knows him intimately.
+H08 The Same Dish
+He looks at the table. Egg noodle soup, like the future meal, but in a familiar household bowl. A second bowl waits on the other side.
+Wife: "I made breakfast today. You've been so tired lately. I thought I'd let you sleep."
+Chef: "You made this?"
+Wife: "Who else?"
+She smiles and offers him chopsticks.
+Continuity: She explicitly says that she cooked the breakfast. The household bowl may resemble the future one without being identical. The dish echoes an emotional intention; the object has not travelled through time.
+H09 She Really Did It
+As she offers the chopsticks, her sleeve slips back. The sun-and-vine ring is on her hand.
+Chef: "Your ring..."
+She touches it.
+Wife: "Why are you asking about that all of a sudden? Mum gave it to me. It's been in the family for generations. You know that."
+New memories surface: meeting her, arguing playfully over who will wash up, an ordinary celebration dinner, the day she showed him the ring. Keep them brief and intimate rather than opening a separate romance subplot.
+Over them, the girl's old words return: "When I grow up, I'll give it to my child."
+He slowly exhales.
+Chef, softly: "She really did it."
+Wife: "What?"
+He shakes his head, smiling through tears that have not quite fallen.
+Chef: "Nothing."
+Continuity: The wife is the girl's descendant many generations later, not the girl herself or the protagonist's descendant. She does not suddenly acquire knowledge of time travel.
+H10 Together
+She glances between him and the noodles.
+Wife: "Does it look that bad? I broke the egg a little."
+He looks at the egg.
+Chef: "It's lovely."
+She sits down. He picks up his chopsticks, then stops.
+Chef: "Have you eaten?"
+Wife: "I was waiting for you."
+She draws her own bowl closer.
+Wife: "Let's eat together."
+He takes a mouthful. This time, he does not judge what is missing.
+Staging: Allow a quiet moment of eating. Morning sounds outside and gentle contact between bowls and chopsticks are enough. Work and tomorrow's problems still exist, but he is no longer facing them alone.
+H11 The Last Ingredient
+Hold on the table: two bowls, two pairs of chopsticks and the ring on her hand.
+Achievement: ACHIEVEMENT UNLOCKED — One More Tomorrow.
+Fade to the title: The Last Ingredient.
+Below it: One chance to begin again.
+Credits, then the option to return to the menu.
+Staging: Do not add a line explaining that "the last ingredient was love." His acceptance of imperfection, willingness to keep living and wife's decision to wait for him have already carried the theme.
+The Happy Ending's Emotional Focus
+His new life is not a prize exchanged for a perfect dish. Rewritten history prevents particular tragedies, while his informed refusal to intervene changes how he responds to failure. The girl gets to grow up, and someone in the present waits to share breakfast with him. The final ingredient may suggest hope, acceptance or companionship; the story does not require a single explicit answer.
+Part Five Causality and Production Continuity
+Royal Layout and Order of Events
+Layout: Kitchen worktop and salt jar → kitchen door → short corridor → dining-room door → girl's table. The wash area branches off the corridor. Her seat has no direct view of the worktop, and she cannot hear every quiet word inside the kitchen.
+First Memory: The girl speaks about the ring at the kitchen doorway → sits in the dining room → the cook prepares soup → leaves to wash his hands → hears a collision on returning → opens an empty kitchen → seasons the soup → carries it into the dining room → the girl collapses → guards arrive.
+The Missing Interval Revealed in BE: The future visitor appears while the cook is away → approaches the pot → hears returning footsteps → turns and breaks the vial → liquid enters the salt → protective recall removes him → the past cook enters.
+Storyboard Constraint: Do not seat the girl beside the cooking pot, show the visitor fleeing past her or put the falling ring in the empty kitchen. Separate kitchen shots from the dining-room poisoning.
+The Bad Ending Contamination Chain
+The compound is independently invented in the future → a physical jump carries a loaded dart to prehistory → the juvenile is mistakenly shot → guards eat contaminated meat → no alarm sounds → the mother attacks → unusual residue remains at the cave site → modern scientists discover and recreate experimental samples → samples are stolen, disguised as seasoning and sold → the chef receives one, and inadequate isolation leads to its accidental use.
+Royal Branch: The same type of future compound enters the kitchen → liquid spills into salt → the cook seasons the soup → the girl dies and the ring's inheritance ends.
+Both chains share a material source. The girl's death does not create the modern seasoning, and the future protagonist never sends himself a package.
+The Happy Ending Revision
+He understands the future evidence → explicitly cancels physical travel → neither shooting nor spill occurs → this prehistoric contamination and modern sample chain are prevented; the girl reaches adulthood → the ring passes to descendants → he returns to a modern life in which he retains his home and is married.
+These specific events change. The ending does not promise that all illness, conflict or difficulty disappears.
+Prop and Information Continuity
+The Sun-and-Vine Ring: S15 establishes ownership and her wish; it falls in the dining room in S18 and is buried with her in S19. H02 shows inheritance; H09 reveals it on the wife. Keep the core pattern consistent. Age and wear may change, but it must not become an unrelated plain wedding band.
+The Triangular Dart and Wound: S10 shows a detail without explanation; S24 identifies the structure and toxicity; B03 creates the same wound. Show the result, then the tool, then the action on the bad route.
+The Blue Compound: S17 shows a faint trace; S25 identifies the material; B05 shows the liquid spill. The soup should not visibly glow. Any blue emphasis is an audience-facing interface cue, not a spectacular physical warning the cook knowingly ignores.
+Branching Hexagonal Crystals: The modern report introduces them in S04. S26 links the cave archive and historical sample. B06 completes the chain. The future archive must include the sample's origin; colour resemblance alone cannot prove the entire history.
+Egg Noodle Soup: S06 is a solitary meal; S07 gives the family memory; H05 repeats the cooking; H06 leaves the bowl on the future worktop; H08 establishes that the wife cooked another meal; H10 shares it. Do not transport one bowl mysteriously through all three locations.
+Tarot and Clocks: Beast at 00:00, Crown at 03:00, Gear at 06:00. The bad ending's noon and happy ending's 07:30 belong to different histories. They do not require identical elapsed visit times.
+The Bone Whistle: S11 establishes its use and position. It falls without sounding in S12. Do not play an alarm first and then claim the guards never warned anyone.
+The Yellow Label: It is on the outer packaging. The chef writes a prohibition but fails to isolate the sample. The accident needs both the lost outer warning and the mistaken inner sachet.
+Dialogue Echoes to Preserve
+"Something's still missing" answers "It's good just like this." The family's "Eat first" becomes the chef's reassurance to his remembered self. The girl's unfinished "Today's is lovely t—" becomes "Today's is lovely too." Eating alone becomes "I was waiting for you. Let's eat together."
+Interaction and Ending Logic
+State Flow
+The shared route passes through modern life, prehistory and the royal era before the future. Stations can be investigated freely; the evidence is not a timed examination.
+Record A, B and C once each. After all three are confirmed, play the combined explanation. Only after it is read should truth_understood become true. The player sees readable confirmation states rather than variable names.
+Without understanding and without choosing: remain in the future. Abort before understanding prompts the player to establish why they would abandon the rescue and permits further investigation; it triggers no ending. Reviewing information or making no choice after understanding also leaves the player in the future.
+An informed Abort enters H01, cancels all physical rescues, leads to egg noodle preparation and ends in Consciousness Return. No separate weapon-disassembly or second-destination cancellation is required.
+An explicit Launch at any investigation stage enters B01, followed by the nutrient block, both interventions and Consciousness Return. Use the denial dialogue if the truth is already understood.
+Incomplete or failed cooking remains at the current step with a hint or retry. It never automatically selects BE. Future Retry is a replay feature outside the story, not a third rescue attempt inside it.
+Cooking in the Four Eras
+Modern: Water, noodles, heat, egg and serving. Establish routine and loneliness.
+Prehistoric: Turn meat, observe cooked colour and feed guards. Involve the player in serving, then reveal that cooking temperature was not the cause.
+Royal: Chop, add, stir and simmer; leave, return, season and serve in the separate dining room. Establish the empty interval and an innocent meal.
+Future BE: Confirm compatible nutrient-block preparation and finish synthesis. Future HE: Choose ordinary ingredients, prepare childhood noodles and decline further presentation adjustments. Both branches retain a cooking interaction.
+Menu and Achievements
+The menu includes Start, Instructions and Achievements. Completing the first ending unlocks Future Retry. BE unlocks A Fate of My Own Making; HE unlocks One More Tomorrow. Show a new-unlock notification once. Later completions may still show the ending title without announcing it as newly earned.
+Staging and Review Notes
+Sound and Pacing
+Use kitchen sounds, rain and a quiet table to establish modern loneliness. In prehistory, contrast fire sounds with the missing alarm. Give the girl ordinary conversation before the spoon's fall interrupts it. In the future, machine hum and evidence confirmations support investigation. End HE with ordinary bowls, chopsticks and morning ambience.
+Fades, sound bridges and short inserts are sufficient. Actions and emotions in the script do not require complex 3D cameras, realistic fluid simulation or expensive animation. Expand or reduce storyboard panels according to narrative clarity.
+Six Points That Must Be Clear
+First, the protagonist did not die from the sample; the restaurant incident cost him his career and home. Second, the girl cannot see the future visitor in the empty kitchen. Third, future evidence links his planned interventions to results already witnessed. Fourth, HE requires an informed, active decision not to intervene. Fifth, the ring passes from the girl through descendants; the wife is not the girl herself. Sixth, the wife cooks the modern breakfast, while the future bowl stays behind.
+Elements Open to Revision
+Scene divisions, dialogue length, supporting-role screen time, the modern montage's length and the order of evidence presentation may change. Personal names, a kingdom name and a specific future year are not required by the main story and are left unspecified.
+If BE should occur only before understanding the truth, remove the informed Launch option and its denial dialogue, then update both the decision screen and branch rules. This edition retains both motivations for comparison during review.
+Do not compress panels by moving the girl back into the kitchen, omitting the stolen sample's origin, turning inaction into automatic BE or removing the wife's statement that she made breakfast.
+Review Record
+Is the protagonist's rescue motivation believable? ______________________
+Do the three future clues explain the causal chain? _____________________
+Are the royal layout and contamination sequence clear? _________________
+Should Launch remain available after understanding? ___________________
+Do the noodles, wife and ring make HE emotionally effective? ____________
+Scenes or dialogue to add or remove: __________________________________
+End of Script

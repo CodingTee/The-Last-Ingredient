@@ -1,0 +1,22 @@
+{
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "name": "wash_basin.png",
+      "prompt": "Use case: stylized-concept. Asset type: standalone transparent PNG sprite for a 1910 palace kitchen washing workstation. A single broad shallow oval ivory white glazed ceramic washbasin, empty, plain slightly rolled rim, viewed from 40 degrees above, entire basin fully visible with clean cutout alpha. Warm cinematic kitchen light, detailed polished high-end hand-painted 2D anime RPG item art. Centered object on genuinely transparent background, no table, no faucet, no jug, no hands, no soap, no writing, no modern sink fixtures, no cast shadow outside object."
+    },
+    {
+      "name": "washing_hands.png",
+      "kind": "Edit of existing first-person hands; professional white cuffs",
+      "prompt": "Edit this existing first-person game sprite for the 1910 royal chef character. Replace the leather wrist accessories with plain clean white long chef shirt cuffs. Keep the two open hands, their pose and viewpoint unchanged. Remove the background completely to genuine transparency; preserve the full hands and white cuffs. Clean painted 2D game illustration. No other objects and no text."
+    },
+    {
+      "name": "wash_background.png",
+      "prompt": "Use case: historical-scene. Asset type: first-person workstation background for a 1910 palace kitchen 2D anime RPG, landscape 16:10. A modest separate hand-washing alcove off the kitchen corridor: warm aged cream stone wall, a sturdy clean dark walnut wooden washstand countertop filling the lower half, plain cabinet below, warm amber wall light from upper left and subtle cool evening fill from right. Camera looking slightly down toward the horizontal countertop, matching high-end hand-painted 2D anime game environments with clean illustrated outlines, warm cinematic light and detailed but clean materials. Leave broad empty clear countertop center and right for independently composited washbasin, hands, and water jug sprites. Full rectangular image edge to edge, no white borders. NO stove, NO burner, NO basin, NO bowl, NO jug, NO hands, NO person, NO text, NO loose tools. Historically appropriate, cared-for palace service room, not ruined or filthy."
+    },
+    {
+      "name": "prep_board.png",
+      "source": "Reused previously generated Scene 7 cutting_board.png, preserving its native aspect ratio."
+    }
+  ]
+}

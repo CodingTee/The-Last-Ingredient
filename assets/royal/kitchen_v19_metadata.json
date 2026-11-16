@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-29",
+  "tool": "built-in image_gen",
+  "source": "exec-07fbe602-b87a-45ec-b9ff-920a71280f1b.png",
+  "initial_source": "exec-a206b364-8f79-4df3-9850-414343fad084.png",
+  "target": "Royal_Kitchen_Reference_Palette_v18.png",
+  "size": [
+    1586,
+    992
+  ],
+  "fixes": [
+    "three separately hung utensils with continuous handles",
+    "one plainly tied linen storage sack, malformed small white jar removed"
+  ],
+  "runtime_replaced": false
+}

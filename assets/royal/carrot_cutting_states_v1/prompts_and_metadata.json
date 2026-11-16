@@ -1,0 +1,149 @@
+[
+  {
+    "id": "00_whole",
+    "prompt": "Use case: stylized-concept. Single transparent cooking game sprite. Reference onion is STYLE/CAMERA ONLY, replace subject with ONE clean peeled bright orange carrot, horizontal axis thick crown LEFT, tapered pointed tip RIGHT. Slightly elevated side view, clean softly shaded high-detail illustration matching reference, orange cross section with subtle lighter center, crisp edges. No knife, no board, no text, no shadows, no background. All cut pieces remain standing on their curved edges, vertical round/oval cut faces looking partly toward viewer, NOT laid flat. Equal small gaps along a single horizontal row, consistent original axis. No green leafy bunch: only tiny dry stem stump on crown. Whole intact carrot, dry crown attached LEFT, pointed taper RIGHT. Exactly one whole carrot.",
+    "refinement_prompt": "Precise edit: reconstruct the carrot BEFORE trimming. Join the tiny LEFT waste cap back onto the large carrot seamlessly, forming exactly ONE WHOLE uncut continuous carrot. Keep its small brown stem stump LEFT, tapered point RIGHT. NO cut faces, NO separated slices, no gaps, NO duplicated pieces. Same color, view, shading. Transparent background, no text no board.",
+    "source": "generated_images/exec-25009817-38fe-41f2-bce7-ff948e4bf785.png",
+    "file": "carrot_00_whole.png",
+    "canvas": [
+      1000,
+      420
+    ],
+    "source_bbox": [
+      185,
+      155,
+      1753,
+      609
+    ],
+    "content_size": [
+      794,
+      230
+    ]
+  },
+  {
+    "id": "01_trimmed",
+    "prompt": "Use case: stylized-concept. Single transparent cooking game sprite. Reference onion is STYLE/CAMERA ONLY, replace subject with ONE clean peeled bright orange carrot, horizontal axis thick crown LEFT, tapered pointed tip RIGHT. Slightly elevated side view, clean softly shaded high-detail illustration matching reference, orange cross section with subtle lighter center, crisp edges. No knife, no board, no text, no shadows, no background. All cut pieces remain standing on their curved edges, vertical round/oval cut faces looking partly toward viewer, NOT laid flat. Equal small gaps along a single horizontal row, consistent original axis. No green leafy bunch: only tiny dry stem stump on crown. Cut off only thin dry crown cap LEFT. One tiny detached waste cap sits to far LEFT with a gap; remaining entire carrot tapers RIGHT and has fresh flat circular LEFT face. Exactly two pieces: tiny waste and edible carrot.",
+    "refinement_prompt": null,
+    "source": "generated_images/exec-4c877e1b-4b1f-4e81-9d2c-9e542f348231.png",
+    "file": "carrot_01_trimmed.png",
+    "canvas": [
+      1000,
+      420
+    ],
+    "source_bbox": [
+      188,
+      158,
+      1755,
+      609
+    ],
+    "content_size": [
+      799,
+      230
+    ]
+  },
+  {
+    "id": "02_slice1",
+    "prompt": "Use case: stylized-concept. Single transparent cooking game sprite. Reference onion is STYLE/CAMERA ONLY, replace subject with ONE clean peeled bright orange carrot, horizontal axis thick crown LEFT, tapered pointed tip RIGHT. Slightly elevated side view, clean softly shaded high-detail illustration matching reference, orange cross section with subtle lighter center, crisp edges. No knife, no board, no text, no shadows, no background. All cut pieces remain standing on their curved edges, vertical round/oval cut faces looking partly toward viewer, NOT laid flat. Equal small gaps along a single horizontal row, consistent original axis. No green leafy bunch: only tiny dry stem stump on crown. Crown already trimmed and discarded, no waste visible. Cut ONE 1/6 axial-length edible round slice from LEFT. Exactly TWO edible pieces: one slice LEFT and long connected remaining tapered carrot RIGHT of 5/6 original edible length. Ratio1:5.",
+    "refinement_prompt": "Precise tiny object edit: REMOVE ONLY the little brown dry stem stump attached to the far LEFT edge of the leftmost carrot slice. Replace that tiny protrusion with transparent background; leave a clean orange trimmed slice edge. Preserve exact number of pieces, their shape, positions, orientation, lighting, all orange flesh and gaps. NO brown stem, NO roots anywhere. Genuine transparent background. No text.",
+    "source": "generated_images/exec-8fd1d7a8-4693-4596-9196-920383ef9447.png",
+    "file": "carrot_02_slice1.png",
+    "canvas": [
+      1000,
+      420
+    ],
+    "source_bbox": [
+      385,
+      178,
+      1590,
+      599
+    ],
+    "content_size": [
+      658,
+      230
+    ]
+  },
+  {
+    "id": "03_slice2",
+    "prompt": "Use case: stylized-concept. Single transparent cooking game sprite. Reference onion is STYLE/CAMERA ONLY, replace subject with ONE clean peeled bright orange carrot, horizontal axis thick crown LEFT, tapered pointed tip RIGHT. Slightly elevated side view, clean softly shaded high-detail illustration matching reference, orange cross section with subtle lighter center, crisp edges. No knife, no board, no text, no shadows, no background. All cut pieces remain standing on their curved edges, vertical round/oval cut faces looking partly toward viewer, NOT laid flat. Equal small gaps along a single horizontal row, consistent original axis. No green leafy bunch: only tiny dry stem stump on crown. Crown trimmed and waste cleared. Exactly THREE edible pieces: TWO equal axial thickness slices LEFT, plus one connected tapered remaining carrot RIGHT of 4/6 original length. Ratio1:1:4. Slices decrease slightly in diameter from left to right.",
+    "refinement_prompt": "Precise tiny object edit: REMOVE ONLY the little brown dry stem stump attached to the far LEFT edge of the leftmost carrot slice. Replace that tiny protrusion with transparent background; leave a clean orange trimmed slice edge. Preserve exact number of pieces, their shape, positions, orientation, lighting, all orange flesh and gaps. NO brown stem, NO roots anywhere. Genuine transparent background. No text.",
+    "source": "generated_images/exec-21f18c92-5f97-4385-ab1a-e21555979c94.png",
+    "file": "carrot_03_slice2.png",
+    "canvas": [
+      1000,
+      420
+    ],
+    "source_bbox": [
+      233,
+      175,
+      1718,
+      598
+    ],
+    "content_size": [
+      807,
+      230
+    ]
+  },
+  {
+    "id": "04_slice3",
+    "prompt": "Use case: stylized-concept. Single transparent cooking game sprite. Reference onion is STYLE/CAMERA ONLY, replace subject with ONE clean peeled bright orange carrot, horizontal axis thick crown LEFT, tapered pointed tip RIGHT. Slightly elevated side view, clean softly shaded high-detail illustration matching reference, orange cross section with subtle lighter center, crisp edges. No knife, no board, no text, no shadows, no background. All cut pieces remain standing on their curved edges, vertical round/oval cut faces looking partly toward viewer, NOT laid flat. Equal small gaps along a single horizontal row, consistent original axis. No green leafy bunch: only tiny dry stem stump on crown. Crown trimmed and waste cleared. Exactly FOUR edible pieces: THREE equal axial thickness round slices LEFT, plus one connected tapered remaining carrot RIGHT of 3/6 original length. Ratio1:1:1:3. Diameter decreases towards right.",
+    "refinement_prompt": "Precise tiny object edit: REMOVE ONLY the little brown dry stem stump attached to the far LEFT edge of the leftmost carrot slice. Replace that tiny protrusion with transparent background; leave a clean orange trimmed slice edge. Preserve exact number of pieces, their shape, positions, orientation, lighting, all orange flesh and gaps. NO brown stem, NO roots anywhere. Genuine transparent background. No text.",
+    "source": "generated_images/exec-8d6648b5-a994-4852-ac37-3f14cc55d31a.png",
+    "file": "carrot_04_slice3.png",
+    "canvas": [
+      1000,
+      420
+    ],
+    "source_bbox": [
+      167,
+      135,
+      2017,
+      588
+    ],
+    "content_size": [
+      880,
+      215
+    ]
+  },
+  {
+    "id": "05_slice4",
+    "prompt": "Use case: stylized-concept. Single transparent cooking game sprite. Reference onion is STYLE/CAMERA ONLY, replace subject with ONE clean peeled bright orange carrot, horizontal axis thick crown LEFT, tapered pointed tip RIGHT. Slightly elevated side view, clean softly shaded high-detail illustration matching reference, orange cross section with subtle lighter center, crisp edges. No knife, no board, no text, no shadows, no background. All cut pieces remain standing on their curved edges, vertical round/oval cut faces looking partly toward viewer, NOT laid flat. Equal small gaps along a single horizontal row, consistent original axis. No green leafy bunch: only tiny dry stem stump on crown. Crown trimmed and waste cleared. Exactly FIVE edible pieces: FOUR equal axial thickness slices LEFT, plus connected tapered pointed remaining carrot RIGHT of 2/6 original length. Ratio1:1:1:1:2. Diameter decreases towards right.",
+    "refinement_prompt": "Precise tiny object edit: REMOVE ONLY the little brown dry stem stump attached to the far LEFT edge of the leftmost carrot slice. Replace that tiny protrusion with transparent background; leave a clean orange trimmed slice edge. Preserve exact number of pieces, their shape, positions, orientation, lighting, all orange flesh and gaps. NO brown stem, NO roots anywhere. Genuine transparent background. No text.",
+    "source": "generated_images/exec-2c5c133f-a37e-495c-8402-984d85981181.png",
+    "file": "carrot_05_slice4.png",
+    "canvas": [
+      1000,
+      420
+    ],
+    "source_bbox": [
+      160,
+      156,
+      1784,
+      633
+    ],
+    "content_size": [
+      783,
+      230
+    ]
+  },
+  {
+    "id": "06_slice5",
+    "prompt": "Use case: stylized-concept. Single transparent cooking game sprite. Reference onion is STYLE/CAMERA ONLY, replace subject with ONE clean peeled bright orange carrot, horizontal axis thick crown LEFT, tapered pointed tip RIGHT. Slightly elevated side view, clean softly shaded high-detail illustration matching reference, orange cross section with subtle lighter center, crisp edges. No knife, no board, no text, no shadows, no background. All cut pieces remain standing on their curved edges, vertical round/oval cut faces looking partly toward viewer, NOT laid flat. Equal small gaps along a single horizontal row, consistent original axis. No green leafy bunch: only tiny dry stem stump on crown. Crown trimmed and waste cleared. Exactly SIX edible pieces in row: FIVE equal axial thickness carrot slices followed by ONE edible short tapered pointed tip segment RIGHT. Ratio1:1:1:1:1:1. The six pieces reconstruct one tapering carrot, widest LEFT then progressively smaller RIGHT. All circular cut faces vertical, none flat.",
+    "refinement_prompt": "Precise tiny object edit: REMOVE ONLY the little brown dry stem stump attached to the far LEFT edge of the leftmost carrot slice. Replace that tiny protrusion with transparent background; leave a clean orange trimmed slice edge. Preserve exact number of pieces, their shape, positions, orientation, lighting, all orange flesh and gaps. NO brown stem, NO roots anywhere. Genuine transparent background. No text.",
+    "source": "generated_images/exec-9f1ff433-96e0-4fd9-8124-419698777308.png",
+    "file": "carrot_06_slice5.png",
+    "canvas": [
+      1000,
+      420
+    ],
+    "source_bbox": [
+      172,
+      138,
+      1779,
+      640
+    ],
+    "content_size": [
+      736,
+      230
+    ]
+  }
+]

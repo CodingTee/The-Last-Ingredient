@@ -1,0 +1,27 @@
+[
+  {
+    "id": "ladle_empty",
+    "prompt": "Clean detailed hand-painted game art for c1910 royal kitchen, softly shaded warm amber lighting, slightly elevated frontal perspective. A single deep metal soup ladle, dark pewter bowl LOWER LEFT, long dark wood handle UPPER RIGHT, empty reflective bowl. Isolated transparent sprite, diagonal composition, no hand no background. No lettering no watermark no glow halo.",
+    "source": "generated_images/exec-cd5cb7d6-a219-45d9-a985-3ad24dd5687b.png"
+  },
+  {
+    "id": "ladle_full",
+    "prompt": "Clean detailed hand-painted game art for c1910 royal kitchen, softly shaded warm amber lighting, slightly elevated frontal perspective. A single deep metal soup ladle, dark pewter bowl LOWER LEFT, long dark wood handle UPPER RIGHT. Bowl filled with golden vegetable-barley soup, tiny orange carrot and pale barley pieces. Isolated transparent sprite, diagonal composition, no hand no background. No lettering no watermark no glow halo.",
+    "source": "generated_images/exec-4eaa6068-fe34-49dc-97e5-0c56e75f5a98.png"
+  },
+  {
+    "id": "bowl_low",
+    "prompt": "Clean detailed hand-painted game art for c1910 royal kitchen, softly shaded warm amber lighting, slightly elevated frontal perspective. Reference sheet bowl only: one white ceramic bowl with blue floral band, exactly matching sheet bowl shape and view, filled ONE THIRD with golden vegetable-barley soup. Surface visibly below rim with inner bowl wall exposed. No other objects. Isolated transparent sprite. No lettering no watermark no glow halo.",
+    "source": "generated_images/exec-982e09d2-303d-4393-9cbd-862ae29aee2b.png"
+  },
+  {
+    "id": "bowl_mid",
+    "prompt": "Clean detailed hand-painted game art for c1910 royal kitchen, softly shaded warm amber lighting, slightly elevated frontal perspective. Reference sheet bowl only: one white ceramic bowl with blue floral band, exactly matching sheet bowl shape and view, filled TWO THIRDS with golden vegetable-barley soup. Surface below rim with some inner wall exposed. No other objects. Isolated transparent sprite. No lettering no watermark no glow halo.",
+    "source": "generated_images/exec-5799d952-7c13-4ddc-b987-0b9ce06f0d7e.png"
+  },
+  {
+    "id": "chef_tray",
+    "prompt": "Clean detailed hand-painted game art for c1910 royal kitchen, softly shaded warm amber lighting, slightly elevated frontal perspective. Reference sheet chef only: same brown-haired bearded male chef, white double-breasted coat, apron dark trousers brown boots. Full body walking toward RIGHT in three-quarter side view, BOTH HANDS supporting a horizontal wooden serving tray at waist level with ONE full white-and-blue floral soup bowl on tray. Natural balanced carrying pose, no extra limbs or utensils, isolated transparent character, no background. No lettering no watermark no glow halo.",
+    "source": "generated_images/exec-d1de22d5-1ca8-40b2-bf4b-d5b712fb4d12.png"
+  }
+]

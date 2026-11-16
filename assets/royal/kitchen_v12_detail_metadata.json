@@ -1,0 +1,25 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-10-29",
+  "requested_size": [
+    3200,
+    2000
+  ],
+  "retry_requested_size": [
+    3840,
+    2400
+  ],
+  "actual_size": [
+    1586,
+    992
+  ],
+  "retry_actual_size": [
+    1586,
+    992
+  ],
+  "pixel_resolution_increased": false,
+  "selected_source": "exec-0165e841-ce9d-4362-a0ec-b995c1096ed9.png",
+  "retry_source": "exec-9081d67b-fff1-4a43-8413-734c0030509c.png",
+  "selected": "Royal_Kitchen_Detailed_Rerender.png",
+  "game_assets_replaced": false
+}

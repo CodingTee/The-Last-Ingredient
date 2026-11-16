@@ -1,0 +1,131 @@
+{
+  "texture": "assets/royal/royal_kitchen_room.png",
+  "world": [
+    2048,
+    1000
+  ],
+  "wall_line_y": 670,
+  "walk_bounds": {
+    "x_min": 120,
+    "x_max": 1930,
+    "y_min": 50,
+    "y_max": 640
+  },
+  "spawn": {
+    "x": 250,
+    "y": 320,
+    "facing": "right"
+  },
+  "colliders": [
+    [
+      170,
+      660,
+      730,
+      970
+    ],
+    [
+      800,
+      320,
+      1500,
+      455
+    ],
+    [
+      140,
+      40,
+      320,
+      240
+    ],
+    [
+      1880,
+      40,
+      2000,
+      220
+    ]
+  ],
+  "hotspots": {
+    "cauldron": {
+      "anchor": [
+        445,
+        690
+      ],
+      "label": "Stir the soup",
+      "prompt": "[E] Stir the soup"
+    },
+    "salt_jar": {
+      "anchor": [
+        1330,
+        360
+      ],
+      "label": "Salt jar",
+      "prompt": "[E] Look at the salt jar"
+    },
+    "board": {
+      "anchor": [
+        1040,
+        380
+      ],
+      "label": "Chopping board",
+      "prompt": "[E] Prepare the vegetables"
+    },
+    "door": {
+      "anchor": [
+        1795,
+        600
+      ],
+      "label": "Kitchen door",
+      "prompt": "[E] Open the door"
+    },
+    "window": {
+      "anchor": [
+        830,
+        580
+      ],
+      "label": "Night window",
+      "prompt": "[E] Look outside"
+    },
+    "tapestry": {
+      "anchor": [
+        1265,
+        580
+      ],
+      "label": "Sun tapestry",
+      "prompt": "[E] Examine the tapestry"
+    },
+    "barrel": {
+      "anchor": [
+        230,
+        200
+      ],
+      "label": "Barrel",
+      "prompt": "[E] Check the barrel"
+    },
+    "side_table": {
+      "anchor": [
+        1650,
+        440
+      ],
+      "label": "Side table",
+      "prompt": "[E] Look at the side table"
+    }
+  },
+  "zones": {
+    "doorway": [
+      1480,
+      260,
+      1900,
+      620
+    ],
+    "hearth": [
+      300,
+      220,
+      760,
+      560
+    ],
+    "prep": [
+      820,
+      240,
+      1500,
+      500
+    ]
+  }
+}

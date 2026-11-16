@@ -1,0 +1,36 @@
+{
+  "tool": "built-in image_gen",
+  "style_reference": "scene7-kitchen-refined.png",
+  "backgrounds_and_base_assets": {
+    "sink_background": "BACKGROUND full landscape 16:9 first-person looking down 35 degrees at double stainless sink in cream stone countertop, brass gooseneck faucet at upper center with separate brass valve handle, muted ivory tiled wall and a little dark blue night window above, walnut front cabinets. EMPTY sink and clear adjacent counter, NO pot no food no loose utensils. Sink bowl occupies middle-left and large clear work surface right. Highest detail, coherent perspective.",
+    "stove_background": "BACKGROUND full landscape 16:9 first-person looking down 35 degrees at a wide dark metal gas cooking range in cream countertop, exactly TWO LARGE empty burner grates horizontally aligned at lower-left center and lower-right center, visible brass burner knobs on front edge, warm ivory tiled backsplash top third, simple utensil rail high on wall. Absolutely NO pots pans food bottles or utensils on burners or counter. Clear counter edges at both sides for independent sprites. Professional clean cooking game scene.",
+    "prep_background": "BACKGROUND full landscape 16:9 first-person looking down 35 degrees at a clear cream stone preparation worktop, walnut front edge, muted ivory subway tile backsplash upper third, warm kitchen task light, generous EMPTY central countertop. NO bowl no board no food no tools no text. Same vintage kitchen.",
+    "pot_empty": "TRANSPARENT SINGLE OBJECT sprite: empty stainless steel cooking stockpot, round open top clearly visible viewed from 35 degrees above front, two small short black side handles, clean metallic interior, no lid no water no food no flame. Entire pot isolated with margin.",
+    "pan_empty": "TRANSPARENT SINGLE OBJECT sprite: empty black nonstick frying pan viewed from 35 degrees above front, large round open inner surface, one long straight dark handle pointing horizontally RIGHT slightly down. No egg oil flame stove shadow or background. Entire pan including handle with margin.",
+    "bowl_empty": "TRANSPARENT SINGLE OBJECT sprite: empty plain warm ivory deep ceramic soup bowl viewed from 35 degrees above front, no food no spoon no markings, entire bowl isolated with margin."
+  },
+  "ingredients_and_tools": {
+    "noodles_dry": "single uncooked pale wheat noodle bundle loosely tied with plain paper band; individual straight strands visible, diagonal horizontal orientation, no bowl or wrapper text",
+    "eggs_carton": "one small open brown cardboard carton holding EXACTLY TWO whole ivory chicken eggs, no other eggs",
+    "oil_bottle": "one small clear glass cooking oil bottle with golden oil, simple dark pour spout, no label or text",
+    "egg_raw": "one cracked RAW egg content only: translucent soft egg white surrounding a round golden yolk, seen obliquely from above, no shell no pan no plate",
+    "egg_fried": "one cooked sunny-side-up egg only: cohesive opaque ivory white, lightly golden crispy edges and bright domed golden yolk, oblique top view, no pan no plate",
+    "shell_half": "one EMPTY half chicken eggshell, ivory outside pale interior visible, natural broken jagged rim, useful for scooping, no egg white or yolk",
+    "shell_fragment": "ONE small clearly recognizable curved ivory eggshell shard, irregular triangular broken edge, pale inside, no other objects",
+    "ladle": "one stainless soup ladle with deep round bowl and walnut handle, whole tool diagonally oriented upper-left to lower-right",
+    "chopsticks": "one matching PAIR of long wooden cooking chopsticks placed close together diagonally, no bowl",
+    "spatula": "one flat stainless slotted egg-turner spatula with walnut handle, whole utensil diagonal, no pan",
+    "knife": "one Japanese santoku kitchen knife with walnut handle, coherent steel blade and straight spine, lying diagonally, not floating upright",
+    "cutting_board": "one plain rectangular warm wooden cutting board lying FLAT with perspective, softly rounded corners, no food no tools",
+    "shell_saucer": "one empty small warm ivory ceramic saucer, shallow, oblique top view, no shell",
+    "burner_knob": "one round brass stove control knob with black raised grip and one clear small index notch, face seen from mildly above, no text no panel",
+    "water_surface": "one clean gently rippled translucent blue-gray WATER SURFACE shaped as a shallow wide horizontal ellipse viewed obliquely from above; only liquid surface no vessel no rim no droplets outside",
+    "noodles_cooked": "one portion of pale cooked wheat noodles in light amber clear broth, as a compact horizontal elliptical mound/surface viewed from 35 degrees above; NO bowl NO pot NO egg, soft individual noodle strands",
+    "bowl_soup": "one warm ivory deep ceramic bowl filled with simple pale wheat noodle soup, light amber broth and ONE sunny-side-up egg on top. No elaborate garnishes, no extra toppings, no spoon, no tray. Same bowl design as empty ivory bowl."
+  },
+  "refinements": {
+    "kitchen_clean": "Preserve approved kitchen geometry and lighting; remove loose vegetable bowl, cutting board, loose knife, oil bottle, pot and frying pan so runtime sprites can be overlaid.",
+    "bowl_soup": "Use generated empty bowl as reference; preserve plain ivory ceramic shape and add wheat noodles in amber broth with one sunny-side-up egg; no patterns or garnish."
+  },
+  "common_style": "Clean 2D anime, vintage cream/walnut/brass kitchen, first-person camera about 35 degrees down; transparent complete isolated objects without text or UI."
+}

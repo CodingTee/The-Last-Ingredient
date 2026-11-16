@@ -1,0 +1,6 @@
+{
+  "source": "generated_images/exec-97ca1866-7102-4e4a-95a5-15d3ec327adb.png",
+  "prompt": "Use case game sprite. Reference screenshot is ONLY for knife orientation and edge-on viewpoint, not its colors or hands/UI. Generate ONE isolated chef knife seen straight down along its BLUNT SPINE, absolutely VERTICAL in image, tip at TOP center, handle at BOTTOM center, aligned on one vertical centerline. Extremely thin visible silver blade spine (about 1/8 handle width), long straight narrow blade extends upward from small bolster. We see the back/top edge of the blade only, no broad side face, no diagonal, no near-far perspective distortion. Dark brown wood handle with brass rivets, normal proportions, blade 65% of total length and handle35%. Entire silhouette tall and thin approximately width:height1:10. Detailed clean softly painted illustration matching a c1910 royal kitchen. True transparent background. No hands, no onion, no board, no arrow, no text, no glow, no shadow haze, no other items. Camera and vertical orientation match the knife in reference screenshot.",
+  "reference": "codex-clipboard-e12fff9d-df47-4db8-842d-730e6c709e93.png",
+  "tool": "built-in image_gen"
+}

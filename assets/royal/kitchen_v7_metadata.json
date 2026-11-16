@@ -1,0 +1,51 @@
+{
+  "version": 7,
+  "installation": "freestanding in front of flat wall; pipe only enters wall collar",
+  "pot_anchors": {
+    "left": [
+      286,
+      532
+    ],
+    "right": [
+      373,
+      532
+    ]
+  },
+  "sources": {
+    "raw": {
+      "source": "exec-685bda71-7372-4b85-a8f6-e243568f6d42.png",
+      "size": [
+        1586,
+        992
+      ]
+    },
+    "prepared": {
+      "source": "exec-34df88d5-f5e9-4ab5-8f08-f6e36364f293.png",
+      "size": [
+        1586,
+        992
+      ]
+    },
+    "boil": {
+      "source": "exec-83303fc7-7aea-447c-92a7-896af6c7ddce.png",
+      "size": [
+        1586,
+        992
+      ]
+    },
+    "simmer": {
+      "source": "exec-d1c5e9ef-0b4f-442a-b0f9-9627f7e67702.png",
+      "size": [
+        1585,
+        992
+      ]
+    },
+    "transfer": {
+      "source": "exec-2d5fd75b-5f90-4c6b-b548-33a83a0c4f5f.png",
+      "size": [
+        1586,
+        992
+      ]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ladle",
+    "prompt": "Transparent game sprite for first-person c1910 royal kitchen. One long wooden soup stirring spoon, oval shallow bowl at LOWER LEFT, long handle pointing UPPER RIGHT, visible 3/4 face, entire tool fully in frame. Clean pale brown wood, no soup. Detailed clean hand-painted illustration, warm amber highlights, slightly elevated three-quarter view, crisp silhouette, no text, no background no floor shadow.",
+    "source": "generated_images/exec-9fe544f6-91fc-4b2c-b251-b68aeeeb8319.png"
+  },
+  {
+    "id": "pot_cloth",
+    "prompt": "Transparent game sprite for first-person c1910 royal kitchen. One small folded thick off-white linen kitchen cloth, red woven stripe near edge, loosely draped shape suitable as cloth over a hot pot handle, no hands. Detailed clean hand-painted illustration, warm amber highlights, slightly elevated three-quarter view, crisp silhouette, no text, no background no floor shadow.",
+    "source": "generated_images/exec-f7fe6eb5-47ad-48a8-bd22-99b9ab782218.png"
+  }
+]

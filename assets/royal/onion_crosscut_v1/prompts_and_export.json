@@ -1,0 +1,46 @@
+[
+  {
+    "id": "07",
+    "prompt": "Exactly FOUR old horizontal seams (five rows) and ONE new vertical seam at20% width from LEFT (two columns). Ten assembled pieces total.",
+    "source": "generated_images/exec-c942f6a2-641e-4fe0-826d-b7129c9d4e2d.png",
+    "crop": [
+      688,
+      96,
+      1246,
+      677
+    ]
+  },
+  {
+    "id": "08",
+    "prompt": "Exactly FOUR old horizontal seams (five rows) and TWO new vertical seams at20% and40% width from LEFT (three columns). Fifteen assembled pieces total.",
+    "source": "generated_images/exec-86d51a15-9afa-46fc-afb8-a9c4fa92650b.png",
+    "crop": [
+      685,
+      91,
+      1250,
+      675
+    ]
+  },
+  {
+    "id": "09",
+    "prompt": "Exactly FOUR old horizontal seams (five rows) and THREE new vertical seams at20%,40%,60% width from LEFT (four columns). Twenty assembled pieces total.",
+    "source": "generated_images/exec-a0bd0179-4def-4e38-8f93-5cd1cc6396fe.png",
+    "crop": [
+      684,
+      92,
+      1250,
+      680
+    ]
+  },
+  {
+    "id": "10",
+    "prompt": "Exactly FOUR horizontal and FOUR vertical seams at20%,40%,60%,80% divisions, giving FIVE rows and FIVE columns. Approximately25 small diced onion blocks, outer blocks follow the round contour. The assembled diced onion still reads as original round silhouette.",
+    "source": "generated_images/exec-1849f192-e367-4495-aa64-d4d665e50657.png",
+    "crop": [
+      686,
+      96,
+      1246,
+      671
+    ]
+  }
+]

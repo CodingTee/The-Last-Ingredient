@@ -1,0 +1,38 @@
+{
+  "prep_board": {
+    "file": "prep_board.png",
+    "size": [
+      1697,
+      673
+    ],
+    "alpha": true,
+    "source": "generated asset or generated-asset adaptation; see generation-prompts.json"
+  },
+  "washing_hands": {
+    "file": "washing_hands.png",
+    "size": [
+      1599,
+      984
+    ],
+    "alpha": true,
+    "source": "generated asset or generated-asset adaptation; see generation-prompts.json"
+  },
+  "wash_background": {
+    "file": "wash_background.png",
+    "size": [
+      1586,
+      992
+    ],
+    "alpha": false,
+    "source": "generated asset or generated-asset adaptation; see generation-prompts.json"
+  },
+  "wash_basin": {
+    "file": "wash_basin.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "alpha": true,
+    "source": "generated asset or generated-asset adaptation; see generation-prompts.json"
+  }
+}

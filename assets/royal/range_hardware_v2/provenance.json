@@ -1,0 +1,26 @@
+[
+  {
+    "id": "open_range",
+    "prompt": "Edit the reference cooking-game range image. Preserve EXACT camera, framing, both circular hobs, stone wall, golden horizontal rail, right oven door and entire stove silhouette. Change ONLY the large LEFT firebox door below the left hotplate: open this same LEFT-HINGED rectangular door outward toward the far left at about 80 degrees, exposing a dark rectangular combustion chamber WITHIN the existing door frame, glowing red orange coal embers low inside. Clearly practical coal loading opening. Door matches original dark cast iron and gold hinge straps, has thickness and correct hinge connection, not a floating square. Absolutely no fire on stove top. No new knobs, no new range, no text. High quality crisp clean 2D hand-painted game background. Same full scene crop and proportions as reference.",
+    "transparent": false,
+    "source": "generated_images/exec-16f47306-6343-454c-a5dd-4eeafa4abe34.png"
+  },
+  {
+    "id": "air_base",
+    "prompt": "Create one isolated sprite for the reference 1910 royal cast iron cooking range. A circular dark cast iron AIR REGULATOR faceplate for mounting FLAT on the FRONT left firebox door, with restrained brass rim, three dark crescent air apertures around a central small round spindle. Front facing, very slight above eye angle like the stove front in reference, circular silhouette, warm amber light from left. Clean readable dark metal, no grunge, no text, no numbers, no arrows, no flames, no mounting wall, no glow. Only the fixed circular faceplate, NOT a knob or lever, transparent background. Precise mechanical kitchen hardware, cohesive with reference.",
+    "transparent": true,
+    "source": "generated_images/exec-ef10523a-9bf6-45f7-90d5-440116d8371d.png"
+  },
+  {
+    "id": "air_handle",
+    "prompt": "Create one isolated sprite of a brass rotating air regulator handle for a 1910 coal kitchen range. Strict front view, small round central brass hub, two short opposing tapered grips horizontal left-right, one narrow pointer arm extending UPWARD from center ending in small triangle. Central pivot at exact center of visible object. Restrained antique brass, amber highlights from upper left, clean crisp hand-painted game art matching reference. Symmetric overall circular footprint. No backing plate, no panel, no wall, no text, no glow, no shadow halo. Transparent background. It must look like a mounted rotary stove handle, not electrical switch.",
+    "transparent": true,
+    "source": "generated_images/exec-48de9500-7cb0-4abe-92d0-ce42ccae2401.png"
+  },
+  {
+    "id": "prep_tray",
+    "prompt": "Create one EMPTY food preparation tray sprite for a 1910 royal kitchen cooking game matching reference. Wide shallow rectangular wooden kitchen tray, slightly raised thin wooden rim on all four sides, sturdy simple pale oak with subtle restrained grain. Seen from above at a modest angle: front long edge low, back long edge high, the same perspective as stove top in reference. Broad empty flat interior for three piles of diced vegetables and barley. No food, no utensils, no handles sticking out, no text. Clean hand-painted 2D game art, sharp edges, warm left illumination. Isolated transparent background, no ground plane, no glow or broad shadow.",
+    "transparent": true,
+    "source": "generated_images/exec-7e22f67c-e714-481b-b81c-824d47ae1598.png"
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "source": "TheLastIngredient/assets/royal/Royal_Kitchen_Reference_Textures_v21.png",
+  "native_size": [
+    1585,
+    992
+  ],
+  "export": "original preserved; center crop only; no resampling",
+  "runtime": "royal_view.py all kitchen backgrounds v21; separate animated vessel",
+  "lid_centers_source_px": [
+    [
+      331,
+      445
+    ],
+    [
+      451,
+      445
+    ]
+  ],
+  "cooking_anchors": [
+    [
+      301,
+      522
+    ],
+    [
+      410,
+      522
+    ]
+  ],
+  "old_alignment_warp": false
+}

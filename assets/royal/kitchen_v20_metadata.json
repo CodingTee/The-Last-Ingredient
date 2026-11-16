@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-29",
+  "tool": "built-in image_gen",
+  "source": "exec-41f135d7-cab5-4d23-a6b3-3d6d74ea9931.png",
+  "reference": "codex-clipboard-ec7b2008-f2ed-4707-b1f9-ff325b6e404e.png",
+  "size": [
+    1584,
+    993
+  ],
+  "direction": "crisp clean full-scene repaint preserving dark wall/floor palette and amber-blue illumination; distinct hanging tools and single storage sack",
+  "runtime_replaced": false
+}

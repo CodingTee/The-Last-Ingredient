@@ -1,0 +1,17 @@
+[
+  {
+    "id": "thin",
+    "prompt": "Precise object edit: preserve reference wooden spoon shape, diagonal handle upper right and oval bowl lower left, camera and wood color. Fill bowl with shallow watery translucent amber broth pooled in bowl, few small droplets falling below bowl. ONE isolated spoon sprite on genuine transparent background. NO glow halo, no background, no lettering, no hand, crisp silhouette. Match warm c1910 painted game art.",
+    "source": "generated_images/exec-0af36e3a-6898-48f9-830a-988b3bfac9bf.png"
+  },
+  {
+    "id": "balanced",
+    "prompt": "Precise object edit: preserve reference wooden spoon shape, diagonal handle upper right and oval bowl lower left, camera and wood color. Fill bowl with smooth light golden vegetable barley soup coating bowl in a gentle thin layer, a few tiny soft carrot/barley pieces, one short ribbon draining below. ONE isolated spoon sprite on genuine transparent background. NO glow halo, no background, no lettering, no hand, crisp silhouette. Match warm c1910 painted game art.",
+    "source": "generated_images/exec-d5ac3538-95e8-484e-9e39-259a40ce99ec.png"
+  },
+  {
+    "id": "thick",
+    "prompt": "Precise object edit: preserve reference wooden spoon shape, diagonal handle upper right and oval bowl lower left, camera and wood color. Fill bowl with thick dense golden barley vegetable puree heaped in bowl, clinging to wood, only a small heavy blob hanging below. ONE isolated spoon sprite on genuine transparent background. NO glow halo, no background, no lettering, no hand, crisp silhouette. Match warm c1910 painted game art.",
+    "source": "generated_images/exec-8a216654-bc10-4d91-828b-2537b3175379.png"
+  }
+]

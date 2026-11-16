@@ -1,0 +1,4 @@
+{
+  "tool": "built-in imagegen",
+  "prompt": "Precise color-matching edit. Image 1 is TARGET: standing little princess holding up a gold ring. Image 2 is COLOR MASTER: same princess ordinary standing with lowered arms. Change ONLY target HAIR colors to exactly match image2 chestnut brown palette, including same base brown, warm lighter highlights and deep brown shadow tones. No extra reddish/copper shift, no brighter orange highlights. Use image2 hair as exact material and lighting reference. Preserve image1 facial identity, eyes, hair silhouette curl shapes, pose, raised hands holding ring, dress pink color, bow, boots, linework, composition and size. DO NOT change anything else. One isolated full-body transparent sprite, actual alpha-zero background outside silhouette, no backdrop shadow glow text."
+}
